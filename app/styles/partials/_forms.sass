@@ -5,25 +5,895 @@
 /*----------- Form sryle *
  ------------------------------------------------------------*/
 
+// file input
+
+input.chose_file_input
+  display: none
+  padding: 0
+  border: none
+
+.chose_file
+  color: $green
+  display: block
+  font-size: 14px
+  width: 215px
+  padding: 10px 10px
+  cursor: pointer
+  border: 1px solid $green
+  border-radius: 5px
+  text-align: center
+  min-width: 215px
+  text-decoration: none
+  line-height: 24px
+  &:hover
+    text-decoration: underline
+
+.chose_file_text
+  color: #000000
+  font-size: 16px
+  display: none
+  padding-top: 10px
+  word-break: break-all
+
+.file-input-wrap
+  flex: 6 0 
+  min-height: 46px
+  line-height: 18px
+  +tablet
+    margin-top: 10px
+
+
+// input
+
+.form-group
+  margin-bottom: 10px
+
+.form-captoin
+  font-size: 16px
+  color: #b4bbc2
+  margin-top: 70px
+
+.checkbox, .radio
+  margin-top: 0
+  margin-bottom: 15px
+  +mobile
+    margin-bottom: 10px
+
+  &--margin-bottom-30
+    margin-bottom: 30px
+    +tablet
+      margin-bottom: 15px
+    +mobile
+      margin-bottom: 10px
+
+  label
+    font-weight: 300
+    padding-left: 0
+    color: #b4bbc2
+    font-size: 16px
+    vertical-align: top
+  
+  &__text 
+    line-height: 15px
+    font-size: 14px
+    color: #848691
+    letter-spacing: 0.2px
+    margin-left: 20px
+
+  input[type="checkbox"], input[type="radio"]
+    display: none
+    + label span
+      display: inline-block
+      width: 9px
+      height: 9px
+      border-radius: 1px
+      vertical-align: middle
+      border: 1px solid #a4abb3
+      cursor: pointer
+      position: relative
+      margin-right: 10px
+
+    &:checked + label span:before
+      content: ' '
+      position: absolute
+      bottom: 1px
+      left: 1px
+      width: 5px
+      height: 5px
+      background-color: $green
+
+.sex
+  span 
+    margin-bottom: 2px
+  div.checkbox
+    height: 35px
+    padding-top: 3px
+    margin: 0 
+    margin-bottom: 10px
+    margin-right: 15px
+    display: inline-block
+
 input, textarea
-  +placeholder-color(#000)
-  +border-radius(0px)
-  padding: 0 20px
+  +placeholder-color(#b4bbc2)
+  +border-radius(3px)
+  padding: 7.5px 11px 7.5px 17px
   width: 100%
-  height: 50px
   position: relative
   outline: none
-  font: 14px $site-font-family
-  color: #000
+  font: 15px $site-font-family
+  color: #b4bbc2
   background-color: #fff
-  border: 1px solid #e0e0e0
+  border: 1px solid #c6ccd2
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
 textarea
-  height: 140px
+  height: 70px
   vertical-align: top
   padding: 15px 20px
   resize: none
 
+.serach-form
+  margin-top: 4px
+  +desktop-large
+    margin-top: 5px
 
+  &__input
+    background-color: #ffffff
+    padding: 11px 15px 9px 32px
+  &__submit 
+    position: absolute
+    top: 50%
+    left: 24px
+    margin-top: -7px
+    border: none
+    background: none
+    +sprite($search)
+
+
+.question-form
+  max-width: 450px
+  margin: 0 auto
+  +desktop
+    margin-top: 20px
+
+  &__row
+    margin-left: -4px
+    margin-right: -4px
+    overflow: hidden
+  &__section
+    width: 50%
+    float: left
+    padding: 0 4px
+
+  &__title
+    display: block
+    margin-bottom: 12px
+    color: #ffffff
+    font-size: 16px
+
+  &__input
+    border: none
+    background-color: #102d3d
+    padding: 7px 20px
+    font-size: 12px
+    color: #a9c2d0
+    margin-bottom: 6px
+
+  &__submit
+    float: right
+    min-width: 123px
+    padding: 6px 10px
+    font-size: 14px
+
+  &__textarea
+    height: 64px
+    border: none
+    background-color: #102d3d
+    padding: 10px 17px
+    font-size: 12px
+    color: #a9c2d0
+    margin-bottom: 9px
+
+.teacher-preiew
+  padding: 10px
+  background-color: #ffffff
+  border-radius: 4px
+  border: 1px solid #a4abb3
+  margin-bottom: 10px
+
+  &__wrap
+    overflow: hidden
+  &__avatar
+    float: left
+    max-width: 65px
+    overflow: hidden
+    border-radius: 50%
+
+  &__name
+    display: block
+    margin-left: 80px
+    font-size: 16px
+    line-height: 18px
+    color: #383535
+    margin-bottom: 5px
+
+  &__profession
+    display: block
+    margin-left: 80px
+    font-size: 12px
+    line-height: 12px
+    color: $green
+
+  &__description
+    display: block
+    margin-top: 10px
+    font-size: 11px
+    color: #5e656b
+    line-height: 12px
+    font-style: italic
+
+.recommend-form
+  margin-bottom: 20px
+  max-width: 450px
+  margin: 0 auto 20px
+  &__input
+    border: 1px solid #a4abb3
+    font-size: 14px
+  &__submit
+    color: #ffffff
+    background-color: #d14f4f
+    border: none
+    border-radius: 4px
+    padding: 10px 5px
+    width: 100%
+    line-height: 14px
+    text-transform: uppercase
+    transition: all 0.2s ease
+    &:hover
+      background-color: darken(#d14f4f, 5%)
+    span 
+      text-transform: none
+      font-size: 12px
+      display: block
+
+  &__textarea
+    padding: 10px 15px
+    font-size: 14px
+
+.teacher-filter
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 30px
+  align-items: center 
+  .left-wrap
+    display: flex
+    flex: 8 1 500px
+    +tablet
+      flex-wrap: wrap
+
+  .right-wrap
+    display: flex
+    flex: 4 1 230px
+    +desktop-large
+      order: 1
+
+  .jq-selectbox
+    margin-bottom: 10px
+    margin-right: 10px
+    +tablet
+      flex: 3 0 130px
+    +mobile
+      flex-basis: 200px
+  
+  .btn 
+    margin-bottom: 10px
+
+  button[type="submit"]
+    margin-right: 10px
+
+  .hidden-block
+    min-width: 100%
+    background-color: #f5f8f9
+    padding: 20px 
+    margin-bottom: 20px
+
+    .title-h2
+      margin-bottom: 35px
+
+
+  .close-settings
+    cursor: pointer
+    display: inline-block
+    margin-left: 35px
+    color: #a6abaa
+    font-size: 18px
+    line-height: 18px
+    border-bottom: 1px dashed #a6abaa
+    &:hover, &:focus
+      border: none
+
+  .advanced-settings
+    min-width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 10px
+    input 
+      margin-bottom: 10px
+
+
+
+  .filter-group
+    flex: 3 0 auto
+    margin-right: 30px
+    .sex .checkbox input[type="checkbox"] + label span
+      margin-top: 7px
+    .checkbox input[type="checkbox"] + label span
+      float: left
+      margin-top: 2px
+    +desktop-large
+      margin-right: 10px
+    +tablet
+      flex-basis: 200px
+
+  .filter-title
+    color: #6b6b6b
+    font-size: 16px
+    margin-bottom: 10px
+    display: block
+
+.slider-price
+  form
+  .prices-wrap
+    justify-content: space-between
+    display: flex
+    flex-wrap: wrap
+
+  .price
+    margin: 0 3px
+    display: inline-block
+    width: auto
+    border: none
+    padding: 0
+    font-size: 16px 
+    color: #6b6b6b
+
+.review-search-form
+  max-width: 625px
+  display: flex 
+  flex-wrap: wrap
+  margin-bottom: 40px
+  margin-right: -10px
+  margin-left: -10px 
+  +mobile
+    margin-bottom: 20px
+  input
+    margin-right: 20px
+    height: 40px
+    margin-bottom: 10px
+
+  .flex-input-wrap
+    flex: 1 1 270px
+  
+  .flex-col
+    margin: 0 10px
+
+.search-form
+  display: flex
+  flex-wrap: wrap
+
+  margin-bottom: 80px
+  margin-right: -15px
+  margin-left: -15px
+  > div
+    margin-right: 15px
+    margin-left: 15px
+    margin-bottom: 15px
+
+  .section-1
+    flex: 1 1 170px 
+    max-width: 270px
+  .section-2
+    flex: 2 1 350px
+    max-width: 500px
+    +tablet
+      flex-basis: 250px
+    +mobile
+      flex-basis: 100px
+      
+
+  .section-3
+    flex-basis: 240px
+    +desktop
+      flex-grow: 1
+
+  &__title
+    color: #444b52
+    font-size: 16px
+    line-height: 20px
+    margin-bottom: 20px
+    display: inline-block
+    margin-right: 15px
+
+  .sex
+    display: inline-block
+    .checkbox
+      +tablet
+        min-width: auto
+      span 
+        float: none
+        margin-top: 0
+
+  .checkbox
+    +tablet
+      display: inline-block
+      min-width: 170px
+      margin-right: 15px
+
+    span 
+      margin-top: 3px
+      margin-right: 4px
+      float: left
+
+.request-form
+  margin-bottom: 100px
+  +mobile
+    margin-bottom: 30px
+  .row
+    display: flex
+    flex-wrap: wrap
+
+  .flex-col
+    margin-right: 15px
+    margin-left: 15px
+    flex: 3 1 240px
+
+  div[class="col"]
+    display: flex
+
+  .section-1
+    max-width: 240px
+    margin-bottom: 20px
+    +tablet
+      max-width: 100%
+
+  .section-2
+    overflow: hidden
+    max-width: 330px
+    padding-right: 90px
+    border-right: 1px solid #000000
+    margin-bottom: 20px
+    +desktop
+      border: none
+      padding-right: 0
+    +tablet
+      max-width: 100%
+
+  .section-3
+    flex-wrap: wrap
+    display: flex
+    +tablet
+      justify-content: space-around
+    +mobile
+      justify-content: flex-start
+      
+.forms-bg
+  background: url('../images/index-bg.jpg') 50% 50% no-repeat
+  background-size: cover
+  padding: 70px 0
+  +mobile
+    padding: 30px 0
+
+.forms
+  display: flex
+  flex-wrap: wrap
+  +desktop
+    flex-direction: column
+  .left-block
+    flex: 1 0 300px 
+    padding: 0 20px
+    +mobile
+      padding: 0
+
+  .right-block
+    flex: 1 0 300px
+    padding: 0 20px
+    +mobile
+      padding: 0
+
+
+.form-block
+  position: relative
+  max-width: 550px
+  margin: 0 auto
+  padding: 40px 60px
+  box-shadow: 0 5px 13px rgba(0, 0, 1, 0.48)
+  +desktop-large
+    padding: 40px
+  +desktop
+    padding: 30px
+  +mobile
+    padding: 20px 15px
+
+  &:after
+    position: absolute
+    bottom: -8px 
+    left: 0
+    content: ' '
+    width: 100%
+    height: 8px
+
+  &--white
+    background-color: #f8f9fa
+    &:after
+      background: url('../images/border-pattern-white.png') 0 0 repeat-x
+
+  &--grey 
+    background-color: rgba(248, 249, 250, 0.89)
+    &:after
+      background: url('../images/border-pattern-grey.png') 0 0 repeat-x
+
+  &__title
+    font-size: 32px
+    line-height: 1.1em
+    color: #383737
+    margin-bottom: 10px
+    +desktop-large
+      font-size: 28px
+
+  &__caption
+    color: #a7b1ba
+    font-size: 15px
+    line-height: 20px
+    letter-spacing: 0.2px
+    margin-bottom: 15px
+
+.advanded-search
+  
+  .checkbox-wrap
+    height: 180px
+    padding: 20px 15px
+
+
+  .dropdown
+
+    .dropdown-toggle
+      display: block
+      width: 100%
+      border: 1px solid #b0b8c1
+      background: none
+      padding: 5px 20px
+      height: 42px
+      color: #96979d
+      text-align: left
+      font-size: 16px 
+
+    .caret
+      float: right
+      +sprite($dropdown-arrow)
+      border: none
+      margin-top: 7px
+
+    
+  .dropdown-menu
+    width: 100%
+    padding: 0
+    background-color: #ffffff
+    border-radius: 0
+
+    .checkbox
+      margin-bottom: 0
+
+  
+  .jq-selectbox__select
+    height: 40px
+    line-height: 40px
+
+  .checkbox-block
+    display: flex
+    flex-wrap: wrap
+    max-width: 380px
+
+  .checkbox
+    flex: 4 0 105px
+    vertical-align: top
+    margin: 0
+    margin-right: 10px
+    margin-bottom: 10px
+
+    .checkbox__text
+      font-size: 14px
+    +tablet
+      display: inline-block
+      margin-right: 15px
+
+    span 
+      margin-top: 3px
+      margin-right: 4px
+      float: left
+
+.index-request
+  display: flex
+  flex-wrap: wrap
+  +mobile
+    flex-direction: column
+
+  input, textarea
+    margin-bottom: 13px
+    padding: 13px 20px
+
+  textarea
+    height: 106px
+
+  .btn 
+    margin-bottom: 13px
+    padding: 13px 11px
+
+  .flex-col-8
+    flex: 8 6 170px
+    padding: 0 6.5px
+    +mobile
+      padding: 0
+  .flex-col-4
+    align-self: flex-end
+    flex: 4 6 150px
+    padding: 0 6.5px
+    +mobile
+      padding: 0
+      align-self: auto
+
+.decor-arrow
+  margin-top: 40px
+  margin-bottom: 25px
+  display: block
+  width: 173px
+  height: 112px
+  background: url('../images/arrow.png') 0 0 no-repeat
+  +desktop
+    display: none
+
+.info-caption
+  width: 352px
+  height: 157px
+  margin: 30px auto
+  font-size: 18px
+  line-height: 38px
+  color: #b2a1b7
+  padding-top: 20px
+  text-align: center
+  text-shadow: 1px 1px #626262
+  background: url('../images/frame-bg.png') 0 0 no-repeat
+  +mobile
+    width: 290px
+    height: 128px
+    background-size: cover
+    font-size: 16px
+    line-height: 28px
+    margin-top: 30px
+  
+  span
+    font-size: 30px
+    display: block
+    +mobile
+      font-size: 24px
+
+
+.registration-form
+  max-width: 630px 
+  margin-left: 70px
+  padding-right: 15px
+  margin-bottom: 70px
+  +desktop-large
+    margin-left: 0
+  +tablet
+    margin-bottom: 30px
+    padding-right: 0
+    max-width: 100%
+
+  &__title 
+    font-size: 20px
+    color: #444b52
+    display: block
+    margin-bottom: 20px
+
+  .submit-wrap
+    text-align: right
+    +tablet
+      text-align: center
+
+  .half-input
+    width: 47%
+
+  div.flex-row
+    margin-left: -15px
+    margin-right: -15px
+    flex-basis: 330px
+
+  .flex-col-2
+    flex: 2 0 115px
+    margin: 0 15px
+    +tablet
+      margin-bottom: 15px
+
+  .flex-col-6
+    flex: 6 0 250px
+    margin: 0 15px
+    +tablet
+      margin-bottom: 15px
+
+  .form-group
+    display: flex 
+    flex-wrap: wrap
+    align-items: center
+    margin-bottom: 20px
+    +tablet
+      margin-bottom: 15px
+    +mobile
+      margin-bottom: 10px
+
+  input[type="text"]
+    padding: 11px 15px
+
+  .subtitle
+    margin-bottom: 15px
+    margin-top: 15px
+
+  .sex
+    div.radio
+      margin-bottom: 0
+      display: inline-block
+      margin: 0 10px
+
+  .checkbox input[type="checkbox"] + label span
+    float: left
+    margin-top: 2px
+
+  .control-label
+    flex: 0 0 200px 
+    display: inline-block
+    padding-right: 10px
+    color: #383838
+    font-size: 13px
+    line-height: 14px
+    &--uppercase
+      text-transform: uppercase
+      span 
+        font-size: 12px
+        display: block
+        text-transform: none
+    +tablet
+      margin: 5px 0 7px
+    +mobile
+      flex-basis: 100%
+      padding-right: 0
+
+  .control-label-max
+    flex: 2 1 300px
+    font-size: 13px
+    line-height: 14px
+    +tablet
+      flex: 1 0 auto
+
+  .input-wrap
+    flex: 1 1 300px
+    display: inline-block
+    display: flex
+    align-items: center
+    justify-content: space-between
+    
+  .special-input-wrap
+    +mobile
+      flex-direction: column
+      justify-content: flex-start
+    .jq-selectbox
+      +mobile
+        width: 100%
+
+  .max-select .jq-selectbox
+    width: 100%
+
+  .jq-selectbox
+    display: inline-block
+    vertical-align: middle
+    width: auto
+    min-width: 140px
+    &__select
+      height: 42px
+    &__select-text
+      line-height: 40px
+
+  .inner-label
+    display: inline-block
+    vertical-align: middle
+    min-width: 80px
+    text-align: center
+    +mobile
+      margin: 10px 0 7px
+      line-height: 14px
+      text-align: left
+      width: 100%
+
+.modal-form
+  margin-top: 30px
+
+  .row
+    display: flex
+    flex-wrap: wrap
+    align-items: center 
+    +tablet
+      display: block
+
+  p 
+
+
+  &__block
+    margin-bottom: 40px
+
+  .form-control
+    padding: 11px 15px
+    height: 42px
+
+
+  .control-label
+    color: #6b6b6b
+    font-size: 16px
+    line-height: 18px
+    flex-basis: 230px
+    +desktop-large
+      flex-basis: 230px
+      
+
+  textarea
+    min-height: 94px
+
+  .jq-selectbox__select
+    background-color: #ffffff
+    height: 42px
+
+.checkbox-modal
+  margin: 15px 0 20px
+  input
+    float: left
+
+  .checkbox__text
+    display: inline-block
+    vertical-align: middle
+    margin-left: 0
+
+  input[type="checkbox"] 
+    + label span
+      width: 15px
+      height: 15px
+    &:checked + label span:before
+      width: 11px
+      height: 11px
+
+.modal-dialog-small
+  max-width: 370px
+
+
+.authirize-form-toggle a:hover
+  text-decoration: none
+.authirize-form-toggle:hover .authirize-form
+  opacity: 1
+  display: block
+  transition: all 0.2s ease
+
+.authirize-form
+  display: none
+  opacity: 0
+  transition: all 0.2s ease
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.35)
+  padding: 15px
+  background-color: #f2f5f8
+  position: absolute
+  z-index: 2
+  top: 0
+  width: 100%
+  padding-top: 60px
+  .btn 
+    padding: 5px 11px 
+    margin-bottom: 10px
+    border: 1px solid $green
+    font-size: 14px

@@ -1,0 +1,133 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle
+        .container
+          .content
+            h1.title-h1 Регистрация репетитора
+            .registration-wrap
+              .registration-content
+                
+                .steps
+                  .step.step--active
+                    .step__counter ШАГ 1
+                    p личные данные
+
+                  .step
+                    .step__counter ШАГ 2
+                    p профессиональные навыки
+
+                  .step
+                    .step__counter ШАГ 3
+                    p дополнительная информация
+
+                form.registration-form.clearfix
+
+                  .registration-form__title Личные данные:
+  
+                  .form-group
+                    label.control-label.control-label--uppercase(for='input-1') ФИО *
+                    .input-wrap
+                      input#input-1(type='text' placeholder="ФИО *")
+
+                  .form-group
+                    label.control-label.control-label--uppercase(for='input-1') Фото* 
+                      span.upper JPEG/PNG/GIF ≈600×800
+                    .input-wrap
+                      .file-input-wrap
+                        input.chose_file_input(type='file', value='', required='', aria-required='true')
+                        a.chose_file(href='#') загрузить файлы
+                        .chose_file_text
+
+                  .form-group
+                    label.control-label.control-label--uppercase(for='input-1') Дата рождения
+                    .input-wrap
+                      input#input-1(type='text' placeholder="__/__/____ год").js-mask-birthday.width-215
+
+                      .sex
+                        .radio
+                          input(type="radio" name="sex" class="radio" id="checkbox-1")
+                          label(for="checkbox-1") <span></span> М
+
+                        .radio
+                          input(type="radio" name="sex" class="radio" id="checkbox-2")
+                          label(for="checkbox-2") <span></span> Ж
+                  
+                  .form-group
+                    label.control-label.control-label--uppercase(for='input-1') Телефон *
+                    .input-wrap
+                      input#input-1(type='text' placeholder="+7 (___) __ __ ___").js-mask-phone
+
+                  .form-group
+                    label.control-label.control-label--uppercase(for='input-1') Email *
+                    .input-wrap
+                      input#input-1(type='text' placeholder="Email *")
+
+                  .form-group
+                    label.control-label.control-label--uppercase(for='input-1') Логин skype,
+                      span если ведёте занятия удалённо
+                    .input-wrap
+                      input#input-1(type='text' placeholder="Логин skype")
+                
+                  .submit-wrap
+                    button(type="submit").btn.btn-large Следуюший шаг
+
+
+              .registration-aside
+
+                .teacher-preview.teacher-preview--index.teacher-preview--default
+                  .teacher-preview__header
+                    .teacher-preview__avatar
+                      img(src="images/initial-photo.png", alt="")
+                    .rating-wrap
+                      .rating-title рейтинг
+                      ul.rating
+                        li.current(style='width:0%;')
+                          span.star1
+                        li
+                          span.star2
+                        li
+                          span.star3
+                        li
+                          span.star4
+                        li
+                          span.star5
+
+                      .rating-title цены
+                      ul.prices-rating
+                        li.current(style='width:37%;')
+                          span.point-1
+                        li
+                          span.point-2
+                        li
+                          span.point-3
+                        li
+                          span.point-4
+
+                  .teacher-preview__body
+                    .teacher-preview__name ФИО
+                    .teacher-preview__profession репетитор по
+                    .teacher-info__description <span class="teacher-info__description-title">Образование:</span> 
+                    .teacher-info__description <span class="teacher-info__description-title">Стаж:</span>
+                    .teacher-info__description <span class="teacher-info__description-title">Репетитор:</span>
+                    .buttons-wrap
+                      a(href="#!").color-grey подробнее
+                      a(href="#!").color-blue 97 отзывов
+                
+                .progress
+                  .progress-bar(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;') 
+                  .progress-value 60%
+
+                ul.must-fill
+                  li.red Фото
+                  li.red Телефон 
+                  li.red Email
+                  li.green.line-through ФИО
+      //= template/footer.jade

@@ -15,6 +15,7 @@ body
   font-size: $site-text-size
   line-height: $site-line-height
   color: $site-text-color
+  font-weight: 400
   margin: 0
   padding: 0
   width: 100%
@@ -22,12 +23,13 @@ body
 h1, .title-h1, h2, .title-h2, h3, .title-h3, h4, .title-h4, h5, .title-h5
   display: block
   font-family: $site-font-family
-  line-height: 1.1em
+  line-height: 1.2em
   color: $site-title-color
   margin: 0 0 15px
 
 h1, .title-h1
   font-size: $title-h1-size
+  margin-bottom: 30px
 h2, .title-h2
   font-size: $title-h2-size
 h3, .title-h3
@@ -36,6 +38,34 @@ h4, .title-h4
   font-size: $title-h4-size
 h5, .title-h5
   font-size: $title-h5-size
+
+.subtitle
+  font-size: 16px
+  color: #444b52
+  line-height: 18px
+  margin-bottom: 20px
+  width: 100%
+  &--upper
+    text-transform: uppercase
+
+.lk-title
+  font-size: 24px
+  color: #383535
+  margin-bottom: 15px
+  a 
+    font-size: 18px
+    display: inline-block
+    margin-left: 5px
+    color: #34647d
+
+.lk-subtitle
+  color: #444b52
+  font-size: 20px
+  margin-bottom: 20px
+  span 
+    display: block
+    color: #7d919c
+    font-size: 14px
 
 p
   margin: 0 0 20px
@@ -55,6 +85,159 @@ a
 img
   vertical-align: middle
   max-width: 100%
+
+.link
+  font-size: 14px
+  text-transform: uppercase
+  display: inline-block
+  &--small
+    font-size: 12px
+  &--green
+    color: $green 
+  &--grey
+    color: #9fa5a4
+  &--blue
+    color: $blue
+
+  span 
+    display: inline-block
+    vertical-align: baseline
+    margin-right: 4px
+
+span.file-icon
+  vertical-align: sub
+  +sprite($file-small)
+span.mail-icon
+  +sprite($mail-green)
+span.check-icon
+  +sprite($check)
+span.cont-location-icon
+  +sprite($location)
+span.cont-phone-icon
+  +sprite($phone)
+span.cont-mail-icon
+  +sprite($mail)
+span.question-red-icon
+  display: inline-block
+  +sprite($question-red)
+
+span.close-icon
+  +sprite($disable)
+
+span.minus
+  color: #00ac99
+  display: inline-block
+  width: 10px
+  height: 4px
+  background-color: $green
+
+span.plus
+  display: inline-block
+  color: #5093b7
+  position: relative
+  &:before, &:after
+    position: absolute
+    left: 50%
+    margin-left: -10px
+    content: ' '
+    width: 20px
+    height: 4px
+    background-color: $blue
+  &:before
+    transform: rotate(90deg)
+  
+
+
+
+.purple-list
+  font-size: 30px
+  margin-bottom: 0
+  li 
+    font-size: 20px 
+    line-height: 24px
+    margin-bottom: 15px
+    position: relative
+    padding-left: 20px
+    &:before
+      position: absolute
+      top: 8px 
+      left: 0
+      content: ' '
+      width: 7px
+      height: 7px
+      border-radius: 50%
+      background-color: $purple
+    &:last-child
+      margin-bottom: 0
+
+    > a 
+      color: #6b7579
+
+    span 
+      display: block
+      font-size: 16px
+      line-height: 20px
+      color: #a4b9c1
+      a 
+        text-decoration: underline
+        color: #a4b9c1
+        &:hover, &:focus 
+          text-decoration: none
+
+
+
+// TEXT
+
+.dashed-grey
+  text-decoration: none
+  border-bottom: 1px dashed #a5abb1
+  &:hover 
+    text-decoration: none
+    border: none
+    color: #a5abb1
+
+.cloud-links
+  a 
+    color: #ffffff
+    display: inline-block
+    margin-right: 5px
+
+.fotn-size-9
+  font-size: 9px
+.font-size-11
+  font-size: 11px
+.fotn-size-16
+  font-size: 16px
+.fotn-size-18
+  font-size: 18px
+.fotn-size-20
+  font-size: 20px
+.fotn-size-22
+  font-size: 22px
+.fotn-size-27
+  font-size: 27px
+
+.uppercase
+  text-transform: uppercase
+.line-through
+  text-decoration: line-through
+
+.color-grey
+  color: #a5abb1
+
+.color-dark
+  color: #484e54
+
+.color-white
+  color: #ffffff
+
+.color-blue
+  color: #82a0b8
+
+.color-blue-dark
+  color: #34647d
+
+
 
 
 

@@ -1,0 +1,30 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle
+        .container
+          .content
+            h1.title-h1 Контакты
+            .contacts.row
+              .col-sm-5.col-md-4
+                .contacts__body
+                  .contacts__title <span class="cont-location-icon"></span> Адрес для корреспонденции:
+                  p.contacts__text 115419, Российская Федерация, </br> г. Москва, улица Шаболовка, дом 34, строение 3, Трифорд Лимитед
+              .col-sm-4.col-md-3
+                .contacts__body
+                  .contacts__title <span class="cont-phone-icon"></span> Телефон:
+                  p.contacts__text 8 (495) 540-56-76
+              .col-sm-3.col-md-3
+                .contacts__body
+                  .contacts__title <span class="cont-mail-icon"></span> Email:
+                  a(href="#!").contacts__text adm@repetitors.info
+
+
+      //= template/footer.jade

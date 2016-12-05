@@ -6,13 +6,13 @@
  ------------------------------------------------------------*/
 
 .btn
-  min-width: 250px
+  min-width: 112px
   position: relative
   display: inline-block
   vertical-align: middle
-  padding: 10px 20px
+  padding: 10px 11px
   margin: 0
-  font: 20px/20px $btn-font-family
+  font: 16px/20px $btn-font-family
   text-align: center
   text-decoration: none
   cursor: pointer
@@ -20,7 +20,7 @@
   border: none
   background-color: $btn-bg-color
   color: $btn-color
-  border-radius: 10px
+  border-radius: 5px
   transition: all 0.2s ease
   &:hover
     background-color: $btn-h-bg-color
@@ -34,18 +34,69 @@
     outline: none
     color: $btn-color
 
+.btn-border
+  color: $green
+  border: 1px solid $green
+  background-color: #ffffff
+
+.btn-large
+  padding: 15px
+  min-width: 230px  
+
 .btn-max
+  width: 100%  
+
+.btn-transparent
+  background-color: transparent
+  border: 1px solid $green 
+  padding: 9px 11px
+  color: $green
+  &:hover
+    background-color: $green
+
+.btn-purple
+  background-color: $purple
+  font-size: 14px
+  padding: 8px 15px
+  border: 2px solid $purple
+  &:hover
+    background-color: darken($purple, 10%)
+
+.btn-purple-transparent
+  padding: 8px 15px
+  font-size: 14px
+  background-color: #ffffff
+  color: $purple
+  border: 2px solid $purple
+  &:hover, &:focus
+    background-color: $purple
+    color: #ffffff
+
+.review-btns
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  max-width: 300px
+  margin: 0 auto
+  .btn
+    margin-bottom: 30px
+    +desktop
+      margin-bottom: 15px
+
+.btn-white
+  border: 1px solid #ffffff
+  color: #ffffff
+  padding: 9px 60px
+  white-space: normal
+  background-color: transparent
+  &:hover, &:focus
+    background-color: rgba(255,255,255, 0.2)
+
+  +desktop
+    padding: 10px 15px
+
+.registration-btn
   width: 100%
-
-
-
-/*----------- media style -----------*/
-
-
-// @media only screen and (max-width: 768px)
-
-@media only screen and (max-width: 480px)
-
-  .btn 
-    min-width: 100px
-    padding: 5px 10px
+  text-transform: uppercase
+  padding: 15px 20px
+  font-size: 18px

@@ -1,5 +1,69 @@
-footer#footer.footer
-  .container
+footer.footer
+  .footer-top
+    .logo.logo--footer
+      a.logo__image(href="#!")
+        img(src="images/logo.png", alt="logo" title="logo")
+      span.logo__text.logo__text--white  Профессиональное сообщество частных репетиторов
+    .container
+      .row
+        .col-sm-6.col-md-4
+          ul.footer-menu
+            li.footer-menu__item
+              a(href="#!").footer-menu__link о компании
+            li.footer-menu__item
+              a(href="#!").footer-menu__link Преподаватели
+            li.footer-menu__item
+              a(href="#!").footer-menu__link репетиторам
+            li.footer-menu__item
+              a(href="#!").footer-menu__link найти репетитора
+            li.footer-menu__item
+              a(href="#!").footer-menu__link форум
+            li.footer-menu__item
+              a(href="#!").footer-menu__link вузы
+            li.footer-menu__item
+              a(href="#!").footer-menu__link новости
+            li.footer-menu__item
+              a(href="#!").footer-menu__link дисциплины
+            li.footer-menu__item
+              a(href="#!").footer-menu__link контакты
+            li.footer-menu__item
+              a(href="#!").footer-menu__link библиотека
+
+        .col-sm-6.col-md-4
+          .footer-info
+            .phone-number
+              span.phone-number__item 8 (495) 000-00-00
+              span.phone-number__item 8 (800) 000-00-00
+            .mail
+              a(href="#!").mail__link mail@repetitors.info
+            .shedule
+              span.shedule__title.uppercase Часы работы:
+              span.shedule__time.uppercase с 08:00 до 22:00
+
+        .col-sm-10.col-sm-offset-1.col-md-4.col-md-offset-0
+          form.question-form
+            span.question-form__title Задать ворос:
+            .question-form__row
+              .question-form__section
+                input.question-form__input(type="text" placeholder="Ваше имя")
+                input.question-form__input(type="text" placeholder="Ваш e-mail")
+              .question-form__section
+                 textarea(placeholder="Ваш вопрос").question-form__textarea
+            
+              buttom(type="submit").btn.question-form__submit Отправить
+
+  .footer-bottom
+    .container
+      .copyright © 2005–2016 «Ваш репетитор» – Москва
+      a(href="#!").conditions Условия использования
+      
 // #footer
 script(src='js/jquery-2.2.0.min.js')
+script(src='js/jquery-ui-1.10.4.custom.min.js')
+script(src='js/jquery.mCustomScrollbar.js')
+script(src='js/jquery.formstyler.min.js')
+script(src='js/owl.carousel.min.js')
+script(src='js/inputmask.min.js')
+script(src='js/jquery.inputmask.js')
+script(src='js/bootstrap.min.js')
 script(src='js/main.js')

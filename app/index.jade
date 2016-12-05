@@ -6,25 +6,630 @@ html(xmlns='http://www.w3.org/1999/xhtml')
   body
     #wrapper
 
-      //= template/header.jade
+      //= template/header-popover.jade
 
-      section#middle
+      section.middle
         .container
-          ul.breadcrumb
-            li
-              a(href='#') Main
-            li.active Inner page
+          .content
+            h1.title-h1.text-center Нужен репетитор?
 
-          a.btn(href='#') Кнопка
+            .facts
+              .facts__item
+                span.facts-icon-8
+                .facts__body
+                  .facts__title 193430 преподавателей по 80 предметам
+                  .facts__text зарегистрировано в базе данных 
+              .facts__item
+                span.facts-icon-9
+                .facts__body
+                  .facts__title 1108420 учеников
+                  .facts__text нашли репетитора с нашей помощью
+              .facts__item
+                span.facts-icon-10
+                .facts__body
+                  .facts__title 944000 отзывов
+                  .facts__text получино от  клиентов сервиса, 90% которых ярко положительны
+              .facts__item
+                span.facts-icon-6
+                .facts__body
+                  .facts__text мы работаем
+                  .facts__title во всех городах России
 
-          ul
-            li
-              a(href="")
-            li
-              a(href="")
-            li
-              a(href="")
+        .forms-bg
+          .container
+            .forms
+              .left-block
 
-      .page-buffer
+                .form-block.form-block--white
+                  .form-block__title Расширенный поиск по базе
+                  .form-block__caption Воспользуйтесь возможностью детального поиска репетитора
+                  form.advanded-search
+                    .subtitle Программа занятий:
+                    .checkbox-block
+                      .checkbox
+                        input(type="checkbox" class="checkbox" id="checkbox-1")
+                        label(for="checkbox-1") <span></span> 
+                          .checkbox__text дошкольное образование
 
-    //= template/footer.jade
+                      .checkbox
+                        input(type="checkbox" class="checkbox" id="checkbox-2")
+                        label(for="checkbox-2") <span></span> 
+                          .checkbox__text начальные классы
+
+                      .checkbox
+                        input(type="checkbox" class="checkbox" id="checkbox-3")
+                        label(for="checkbox-3") <span></span> 
+                          .checkbox__text 7-9 класс
+
+                      .checkbox
+                        input(type="checkbox" class="checkbox" id="checkbox-4")
+                        label(for="checkbox-4") <span></span> 
+                          .checkbox__text 10-11 класс
+
+                      .checkbox
+                        input(type="checkbox" class="checkbox" id="checkbox-5")
+                        label(for="checkbox-5") <span></span> 
+                          .checkbox__text ЕГЭ
+
+                      .checkbox
+                        input(type="checkbox" class="checkbox" id="checkbox-6")
+                        label(for="checkbox-6") <span></span> 
+                          .checkbox__text ВУЗЫ
+
+                    .subtitle Предметы*
+
+                    .row
+                      .col-md-8.col-sm-6
+                        
+                        .dropdown
+                          button#dropdownMenu1.btn.dropdown-toggle.sr-only(type='button',)
+                            | Русский
+                            span.caret
+                          .dropdown-menu(role='menu', aria-labelledby='dropdownMenu1')
+                            .checkbox-wrap.scroll-bar
+                              .checkbox.checkbox--margin-bottom-30
+                                input(type="checkbox" class="checkbox" id="checkbox-31")
+                                label(for="checkbox-31") <span></span>
+                                  .checkbox__text математика
+
+                              .checkbox.checkbox--margin-bottom-30
+                                input(type="checkbox" class="checkbox" id="checkbox-32")
+                                label(for="checkbox-32") <span></span>
+                                  .checkbox__text английский язык
+
+                              .checkbox.checkbox--margin-bottom-30
+                                input(type="checkbox" class="checkbox" id="checkbox-33")
+                                label(for="checkbox-33") <span></span>
+                                  .checkbox__text русский язык
+
+                              .checkbox.checkbox--margin-bottom-30
+                                input(type="checkbox" class="checkbox" id="checkbox-34")
+                                label(for="checkbox-34") <span></span>
+                                  .checkbox__text информатика
+
+                              .checkbox.checkbox--margin-bottom-30
+                                input(type="checkbox" class="checkbox" id="checkbox-35")
+                                label(for="checkbox-35") <span></span>
+                                  .checkbox__text программирование
+
+                              .checkbox.checkbox--margin-bottom-30
+                                input(type="checkbox" class="checkbox" id="checkbox-36")
+                                label(for="checkbox-36") <span></span>
+                                  .checkbox__text экономика
+
+                              .checkbox.checkbox--margin-bottom-30
+                                input(type="checkbox" class="checkbox" id="checkbox-37")
+                                label(for="checkbox-37") <span></span>
+                                  .checkbox__text история
+
+                              .checkbox.checkbox--margin-bottom-30
+                                input(type="checkbox" class="checkbox" id="checkbox-38")
+                                label(for="checkbox-38") <span></span>
+                                  .checkbox__text информатика
+
+                              .checkbox.checkbox--margin-bottom-30
+                                input(type="checkbox" class="checkbox" id="checkbox-39")
+                                label(for="checkbox-39") <span></span>
+                                  .checkbox__text программирование
+
+                              .checkbox.checkbox--margin-bottom-30
+                                input(type="checkbox" class="checkbox" id="checkbox-40")
+                                label(for="checkbox-40") <span></span>
+                                  .checkbox__text экономика
+
+                              .checkbox.checkbox--margin-bottom-30
+                                input(type="checkbox" class="checkbox" id="checkbox-41")
+                                label(for="checkbox-41") <span></span>
+                                  .checkbox__text история
+
+
+                      .col-md-4.col-sm-6
+                        button(type="submit").btn Искать
+
+                .info-caption За неделю уже <span>1970 учеников </span> нашли себе репетитора
+
+              .right-block
+                .decor-arrow
+                .form-block.form-block--grey
+                  .row
+                    .col-lg-7
+                      .form-block__title Оставьте заявку
+                      .form-block__caption И мы подберем для вас репетитора совершенно бесплатно!
+
+                  form.index-request
+                    .flex-col-8
+                      input(type="text" placeholder="Ваше имя")
+                      input(type="text" placeholder="Ваш телефон")
+                      input(type="text" placeholder="Ваш e-mail")
+
+                    .flex-col-4
+                      textarea(placeholder="Комментарий")
+                      button(type="submit").btn.btn-max Отправить заявку
+
+        .subjects-block
+          .subjects-block__header
+            h2.title-h2.color-white Все дисциплины
+          .subjects-block__body
+            .container
+              .subjects-block__items-wrap
+                .subjects-block__item
+                  .subjects-block__title дошкольная программа
+                  ul.subject-list
+                    li
+                      span 13205
+                      a(href="") математика
+                    li
+                      span 5611
+                      a(href="") физика
+                    li
+                      span 703
+                      a(href="") информатика 
+                    li
+                      span 1022
+                      a(href="") программирование
+                    li
+                      span 2828
+                      a(href="") химия
+                    li
+                      span 1969
+                      a(href="") биология
+
+                .subjects-block__item
+                  .subjects-block__title школьная программа
+                  ul.subject-list
+                    li
+                      span 13500
+                      a(href="") русский язык
+                    li
+                      span 702
+                      a(href="") экономика
+                    li
+                      span 703
+                      a(href="") история
+                    li
+                      span 704
+                      a(href="") обществознание
+                    li
+                      span 705
+                      a(href="") литература
+                    li
+                      span 13500
+                      a(href="") география
+                    li
+                      span 702
+                      a(href="") начальная школа
+
+                .subjects-block__item
+                  .subjects-block__title подготовка к ЕГЭ
+                  ul.subject-list
+                    li
+                      span 15883
+                      a(href="") английский язык
+                    li
+                      span 2759
+                      a(href="") немецкий язык
+                    li
+                      span 3100
+                      a(href="") французский язык
+                    li
+                      span 980
+                      a(href="") китайский язык
+                    li
+                      span 1837
+                      a(href="") испанский язык
+                    li
+                      span 735
+                      a(href="") итальянский язык
+                    li
+                      span 210
+                      a(href="") японский язык
+
+                .subjects-block__item
+                  .subjects-block__title ВУЗЫ
+                  ul.subject-list
+                    li
+                      span 2117
+                      a(href="") музыка
+                    li
+                      span 2367
+                      a(href="") подготовка к школе
+                    li
+                      span 1193
+                      a(href="") логопеды
+                    li
+                      span 2892
+                      a(href="") другие предметы
+
+                  a(href="#!").btn.btn-white <span class="counter">50609</span> Все репетиторы
+
+        .container
+          h2.title-h2.text-center Преподавтели
+          .teachers-block
+            .teachers-block__items-wrap
+
+              .teachers-block__item
+                .teacher-preview.teacher-preview--index
+                  .teacher-preview__header
+                    .teacher-preview__avatar
+                      img(src="https://api.fnkr.net/testimg/106x106/c4c4c4/FFF/?text=106x106", alt="")
+                    .rating-wrap
+                      .rating-title рейтинг
+                      ul.rating
+                        li.current(style='width:80%;')
+                          span.star1
+                        li
+                          span.star2
+                        li
+                          span.star3
+                        li
+                          span.star4
+                        li
+                          span.star5
+
+
+                      .rating-title цены
+                      ul.prices-rating
+                        li.current(style='width:37%;')
+                          span.point-1
+                        li
+                          span.point-2
+                        li
+                          span.point-3
+                        li
+                          span.point-4
+
+                  .teacher-preview__body
+                    .teacher-preview__name Смирнова Карина Игоревна
+                    .teacher-preview__profession репетитор по английскому языку
+                    .teacher-info__description <span class="teacher-info__description-title">Образование:</span> диплом с отличием
+                    .teacher-info__description <span class="teacher-info__description-title">Стаж:</span> 2 года
+                    .teacher-info__description <span class="teacher-info__description-title">Репетитор:</span> с 2007 г
+                    .buttons-wrap
+                      a(href="#!").color-grey подробнее
+                      a(href="#!").color-blue 97 отзывов
+              
+              .teachers-block__item
+                .teacher-preview.teacher-preview--index
+                  .teacher-preview__header
+                    .teacher-preview__avatar
+                      img(src="https://api.fnkr.net/testimg/106x106/c4c4c4/FFF/?text=106x106", alt="")
+                    .rating-wrap
+                      .rating-title рейтинг
+                      ul.rating
+                        li.current(style='width:0%;')
+                          span.star1
+                        li
+                          span.star2
+                        li
+                          span.star3
+                        li
+                          span.star4
+                        li
+                          span.star5
+
+
+                      .rating-title цены
+                      ul.prices-rating
+                        li.current(style='width:37%;')
+                          span.point-1
+                        li
+                          span.point-2
+                        li
+                          span.point-3
+                        li
+                          span.point-4
+
+                  .teacher-preview__body
+                    .teacher-preview__name Смирнова Карина Игоревна
+                    .teacher-preview__profession репетитор по английскому языку
+                    .teacher-info__description <span class="teacher-info__description-title">Образование:</span> диплом с отличием
+                    .teacher-info__description <span class="teacher-info__description-title">Стаж:</span> 2 года
+                    .teacher-info__description <span class="teacher-info__description-title">Репетитор:</span> с 2007 г
+                    .buttons-wrap
+                      a(href="#!").color-grey подробнее
+                      a(href="#!").color-blue 97 отзывов
+              
+              .teachers-block__item
+                .teacher-preview.teacher-preview--index
+                  .teacher-preview__header
+                    .teacher-preview__avatar
+                      img(src="https://api.fnkr.net/testimg/106x106/c4c4c4/FFF/?text=106x106", alt="")
+                    .rating-wrap
+                      .rating-title рейтинг
+                      ul.rating
+                        li.current(style='width:80%;')
+                          span.star1
+                        li
+                          span.star2
+                        li
+                          span.star3
+                        li
+                          span.star4
+                        li
+                          span.star5
+
+
+                      .rating-title цены
+                      ul.prices-rating
+                        li.current(style='width:37%;')
+                          span.point-1
+                        li
+                          span.point-2
+                        li
+                          span.point-3
+                        li
+                          span.point-4
+
+                  .teacher-preview__body
+                    .teacher-preview__name Смирнова Карина Игоревна
+                    .teacher-preview__profession репетитор по английскому языку
+                    .teacher-info__description <span class="teacher-info__description-title">Образование:</span> диплом с отличием
+                    .teacher-info__description <span class="teacher-info__description-title">Стаж:</span> 2 года
+                    .teacher-info__description <span class="teacher-info__description-title">Репетитор:</span> с 2007 г
+                    .buttons-wrap
+                      a(href="#!").color-grey подробнее
+                      a(href="#!").color-blue 97 отзывов
+              
+              .teachers-block__item
+                .teacher-preview.teacher-preview--index
+                  .teacher-preview__header
+                    .teacher-preview__avatar
+                      img(src="https://api.fnkr.net/testimg/106x106/c4c4c4/FFF/?text=106x106", alt="")
+                    .rating-wrap
+                      .rating-title рейтинг
+                      ul.rating
+                        li.current(style='width:0%;')
+                          span.star1
+                        li
+                          span.star2
+                        li
+                          span.star3
+                        li
+                          span.star4
+                        li
+                          span.star5
+
+
+                      .rating-title цены
+                      ul.prices-rating
+                        li.current(style='width:37%;')
+                          span.point-1
+                        li
+                          span.point-2
+                        li
+                          span.point-3
+                        li
+                          span.point-4
+
+                  .teacher-preview__body
+                    .teacher-preview__name Смирнова Карина Игоревна
+                    .teacher-preview__profession репетитор по английскому языку
+                    .teacher-info__description <span class="teacher-info__description-title">Образование:</span> диплом с отличием
+                    .teacher-info__description <span class="teacher-info__description-title">Стаж:</span> 2 года
+                    .teacher-info__description <span class="teacher-info__description-title">Репетитор:</span> с 2007 г
+                    .buttons-wrap
+                      a(href="#!").color-grey подробнее
+                      a(href="#!").color-blue 97 отзывов
+              
+              .teachers-block__item
+                .teacher-preview.teacher-preview--index
+                  .teacher-preview__header
+                    .teacher-preview__avatar
+                      img(src="https://api.fnkr.net/testimg/106x106/c4c4c4/FFF/?text=106x106", alt="")
+                    .rating-wrap
+                      .rating-title рейтинг
+                      ul.rating
+                        li.current(style='width:80%;')
+                          span.star1
+                        li
+                          span.star2
+                        li
+                          span.star3
+                        li
+                          span.star4
+                        li
+                          span.star5
+
+
+                      .rating-title цены
+                      ul.prices-rating
+                        li.current(style='width:37%;')
+                          span.point-1
+                        li
+                          span.point-2
+                        li
+                          span.point-3
+                        li
+                          span.point-4
+
+                  .teacher-preview__body
+                    .teacher-preview__name Смирнова Карина Игоревна
+                    .teacher-preview__profession репетитор по английскому языку
+                    .teacher-info__description <span class="teacher-info__description-title">Образование:</span> диплом с отличием
+                    .teacher-info__description <span class="teacher-info__description-title">Стаж:</span> 2 года
+                    .teacher-info__description <span class="teacher-info__description-title">Репетитор:</span> с 2007 г
+                    .buttons-wrap
+                      a(href="#!").color-grey подробнее
+                      a(href="#!").color-blue 97 отзывов
+              
+              .teachers-block__item
+                .teacher-preview.teacher-preview--index
+                  .teacher-preview__header
+                    .teacher-preview__avatar
+                      img(src="https://api.fnkr.net/testimg/106x106/c4c4c4/FFF/?text=106x106", alt="")
+                    .rating-wrap
+                      .rating-title рейтинг
+                      ul.rating
+                        li.current(style='width:0%;')
+                          span.star1
+                        li
+                          span.star2
+                        li
+                          span.star3
+                        li
+                          span.star4
+                        li
+                          span.star5
+
+
+                      .rating-title цены
+                      ul.prices-rating
+                        li.current(style='width:37%;')
+                          span.point-1
+                        li
+                          span.point-2
+                        li
+                          span.point-3
+                        li
+                          span.point-4
+
+                  .teacher-preview__body
+                    .teacher-preview__name Смирнова Карина Игоревна
+                    .teacher-preview__profession репетитор по английскому языку
+                    .teacher-info__description <span class="teacher-info__description-title">Образование:</span> диплом с отличием
+                    .teacher-info__description <span class="teacher-info__description-title">Стаж:</span> 2 года
+                    .teacher-info__description <span class="teacher-info__description-title">Репетитор:</span> с 2007 г
+                    .buttons-wrap
+                      a(href="#!").color-grey подробнее
+                      a(href="#!").color-blue 97 отзывов
+              
+              .teachers-block__item
+                .teacher-preview.teacher-preview--index
+                  .teacher-preview__header
+                    .teacher-preview__avatar
+                      img(src="https://api.fnkr.net/testimg/106x106/c4c4c4/FFF/?text=106x106", alt="")
+                    .rating-wrap
+                      .rating-title рейтинг
+                      ul.rating
+                        li.current(style='width:80%;')
+                          span.star1
+                        li
+                          span.star2
+                        li
+                          span.star3
+                        li
+                          span.star4
+                        li
+                          span.star5
+
+
+                      .rating-title цены
+                      ul.prices-rating
+                        li.current(style='width:37%;')
+                          span.point-1
+                        li
+                          span.point-2
+                        li
+                          span.point-3
+                        li
+                          span.point-4
+
+                  .teacher-preview__body
+                    .teacher-preview__name Смирнова Карина Игоревна
+                    .teacher-preview__profession репетитор по английскому языку
+                    .teacher-info__description <span class="teacher-info__description-title">Образование:</span> диплом с отличием
+                    .teacher-info__description <span class="teacher-info__description-title">Стаж:</span> 2 года
+                    .teacher-info__description <span class="teacher-info__description-title">Репетитор:</span> с 2007 г
+                    .buttons-wrap
+                      a(href="#!").color-grey подробнее
+                      a(href="#!").color-blue 97 отзывов
+              
+              .teachers-block__item
+                .teacher-preview.teacher-preview--index
+                  .teacher-preview__header
+                    .teacher-preview__avatar
+                      img(src="https://api.fnkr.net/testimg/106x106/c4c4c4/FFF/?text=106x106", alt="")
+                    .rating-wrap
+                      .rating-title рейтинг
+                      ul.rating
+                        li.current(style='width:0%;')
+                          span.star1
+                        li
+                          span.star2
+                        li
+                          span.star3
+                        li
+                          span.star4
+                        li
+                          span.star5
+
+
+                      .rating-title цены
+                      ul.prices-rating
+                        li.current(style='width:37%;')
+                          span.point-1
+                        li
+                          span.point-2
+                        li
+                          span.point-3
+                        li
+                          span.point-4
+
+                  .teacher-preview__body
+                    .teacher-preview__name Смирнова Карина Игоревна
+                    .teacher-preview__profession репетитор по английскому языку
+                    .teacher-info__description <span class="teacher-info__description-title">Образование:</span> диплом с отличием
+                    .teacher-info__description <span class="teacher-info__description-title">Стаж:</span> 2 года
+                    .teacher-info__description <span class="teacher-info__description-title">Репетитор:</span> с 2007 г
+                    .buttons-wrap
+                      a(href="#!").color-grey подробнее
+                      a(href="#!").color-blue 97 отзывов
+              
+            .text-center
+              a(href="#!").color-grey.dashed-grey смотреть всех преподавтелей
+
+        .news-updates
+          h2.title-h2.text-center Новости и объявления
+          .container
+            .article-list
+              .row
+                .col-sm-6
+                  .article
+                    span.article__date 17.09.2013
+                    .article__title
+                      a(href="#!") Ассоциация репетиторов запускает Индексрепетиторства
+                    p.article__text Ассоциация репетиторов (Repetit.ru) существует более 6 лет, и все это время остается одним из лидеров в сфере профессионального подбора репетиторов и частных преподавателей. Ежегодно мы помогаем нескольким десяткам тысяч учеников найти своих наставников...
+                      a(href="#!").article__link читать далее
+                .col-sm-6
+                  .article
+                    span.article__date 17.09.2013
+                    .article__title
+                      a(href="#!") Ассоциация репетиторов запускает Индексрепетиторства
+                    p.article__text Ассоциация репетиторов (Repetit.ru) существует более 6 лет, и все это время остается одним из лидеров в сфере профессионального подбора репетиторов и частных преподавателей. Ежегодно мы помогаем нескольким десяткам тысяч учеников найти своих наставников...
+                      a(href="#!").article__link читать далее
+                .col-sm-6
+                  .article
+                    span.article__date 17.09.2013
+                    .article__title
+                      a(href="#!") Ассоциация репетиторов запускает Индексрепетиторства
+                    p.article__text Ассоциация репетиторов (Repetit.ru) существует более 6 лет, и все это время остается одним из лидеров в сфере профессионального подбора репетиторов и частных преподавателей. Ежегодно мы помогаем нескольким десяткам тысяч учеников найти своих наставников...
+                      a(href="#!").article__link читать далее
+                .col-sm-6
+                  .article
+                    span.article__date 17.09.2013
+                    .article__title
+                      a(href="#!") Ассоциация репетиторов запускает Индексрепетиторства
+                    p.article__text Ассоциация репетиторов (Repetit.ru) существует более 6 лет, и все это время остается одним из лидеров в сфере профессионального подбора репетиторов и частных преподавателей. Ежегодно мы помогаем нескольким десяткам тысяч учеников найти своих наставников...
+                      a(href="#!").article__link читать далее
+
+      //= template/footer.jade

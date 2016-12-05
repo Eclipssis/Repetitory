@@ -1,0 +1,556 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle
+        .container
+          .row.flex-row
+            .col-md-8.col-lg-9
+              .content.content--paddng-right-20
+
+                .form-header
+                  .block-title
+                    h1 Анкеты репетиторов 
+                    .current-location
+                      a(href="#!") Екатеринбург
+                      span , Свердловская область
+
+                  .caption Не хотите перелистывать самостоятельно все 2450 анкет?  <a href="#!" class="link link--blue">Напишите</a> кого вы ищете, и вам посоветуют оптимальный вариант
+             
+                form.teacher-filter
+                  .left-wrap
+                    select
+                      option Предмет
+                      option Option 1
+                      option Option 2
+                      
+                    select
+                      option Район(ы)
+                      option Option 1
+                      option Option 2
+
+                    select
+                      option Цена
+                      option Option 1
+                      option Option 2
+                            
+                  .right-wrap     
+                    button(type="submit").btn Искать
+                    a.btn.btn-transparent.js-toogle-btn Расширенный поиск
+
+                  .hidden-block.js-show-block
+                    .title-h2.text-center Расширенный поиск
+                      span.close-settings свернуть
+
+                    .advanced-settings
+                      .filter-group
+                        .search-form__title Программа занятий:
+                        .checkbox.checkbox--margin-bottom-30
+                          input(type="checkbox" class="checkbox" id="checkbox-1")
+                          label(for="checkbox-1") <span></span>
+                            .checkbox__text дошкольное образование
+
+                        .checkbox.checkbox--margin-bottom-30
+                          input(type="checkbox" class="checkbox" id="checkbox-2")
+                          label(for="checkbox-2") <span></span> 
+                            .checkbox__text начальные классы
+
+                        .checkbox.checkbox--margin-bottom-30
+                          input(type="checkbox" class="checkbox" id="checkbox-3")
+                          label(for="checkbox-3") <span></span>
+                            .checkbox__text 7-9 класс
+
+                        .checkbox.checkbox--margin-bottom-30
+                          input(type="checkbox" class="checkbox" id="checkbox-4")
+                          label(for="checkbox-4") <span></span>
+                            .checkbox__text 10-11 класс
+
+                        .checkbox.checkbox--margin-bottom-30
+                          input(type="checkbox" class="checkbox" id="checkbox-5")
+                          label(for="checkbox-5") <span></span>
+                            .checkbox__text ЕГЭ
+
+                        .checkbox.checkbox--margin-bottom-30
+                          input(type="checkbox" class="checkbox" id="checkbox-6")
+                          label(for="checkbox-6") <span></span>
+                            .checkbox__text ВУЗЫ
+                      .filter-group
+                        .search-form__title Предметы*
+                        .row
+                          .col-sm-6
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-7")
+                              label(for="checkbox-7") <span></span>
+                                .checkbox__text математика 
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-8")
+                              label(for="checkbox-8") <span></span>
+                                .checkbox__text английский язык 
+                            
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-9")
+                              label(for="checkbox-9") <span></span>
+                                .checkbox__text русский язык 
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-10")
+                              label(for="checkbox-10") <span></span>
+                                .checkbox__text информатика  
+                            
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-11")
+                              label(for="checkbox-11") <span></span>
+                                .checkbox__text программирование  
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-12")
+                              label(for="checkbox-12") <span></span>
+                                .checkbox__text экономика  
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-13")
+                              label(for="checkbox-13") <span></span>
+                                .checkbox__text история  
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-14")
+                              label(for="checkbox-14") <span></span>
+                                .checkbox__text химия  
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-15")
+                              label(for="checkbox-15") <span></span>
+                                .checkbox__text биология  
+                            
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-16")
+                              label(for="checkbox-16") <span></span>
+                                .checkbox__text экономика  
+                            
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-17")
+                              label(for="checkbox-17") <span></span>
+                                .checkbox__text история 
+                            
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-18")
+                              label(for="checkbox-18") <span></span>
+                                .checkbox__text обществознание 
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-33")
+                              label(for="checkbox-33") <span></span>
+                                .checkbox__text литература 
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-19")
+                              label(for="checkbox-19") <span></span>
+                                .checkbox__text география 
+
+                          .col-sm-6
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-20")
+                              label(for="checkbox-20") <span></span>
+                                .checkbox__text начальная школа
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-21")
+                              label(for="checkbox-21") <span></span>
+                                .checkbox__text немецкий язык
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-22")
+                              label(for="checkbox-22") <span></span>
+                                .checkbox__text французский язык
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-23")
+                              label(for="checkbox-23") <span></span>
+                                .checkbox__text китайский язык
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-24")
+                              label(for="checkbox-24") <span></span>
+                                .checkbox__text испанский язык
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-34")
+                              label(for="checkbox-34") <span></span>
+                                .checkbox__text итальянский язык
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-25")
+                              label(for="checkbox-25") <span></span>
+                                .checkbox__text японский язык
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-26")
+                              label(for="checkbox-26") <span></span>
+                                .checkbox__text украинский язык
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-27")
+                              label(for="checkbox-27") <span></span>
+                                .checkbox__text казахский язык
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-28")
+                              label(for="checkbox-28") <span></span>
+                                .checkbox__text белорусский язык
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-29")
+                              label(for="checkbox-29") <span></span>
+                                .checkbox__text музыка
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-30")
+                              label(for="checkbox-30") <span></span>
+                                .checkbox__text подготовка к школе
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-31")
+                              label(for="checkbox-31") <span></span>
+                                .checkbox__text логопеды
+
+                            .checkbox
+                              input(type="checkbox" class="checkbox" id="checkbox-32")
+                              label(for="checkbox-32") <span></span>
+                                .checkbox__text другие предметы
+                      .filter-group
+                        .search-form__title Параметры
+                        .form-group
+                          input(type="text" placeholder="Район")
+                        .form-group
+                          input(type="text" placeholder="Место")
+                        .form-group
+                          input(type="text" placeholder="Продолжительность")
+
+                        .filter-group
+                          .search-form__title Стоимость
+                          .slider-price
+                            form(action='#', method='#')
+                              #sliderPrice
+                              .prices-wrap
+                                label(for='price')
+                                  | от
+                                  span#price.price(type='text', name='price')
+                                  | р/час
+                                label(for='price2')
+                                  | до
+                                  span#price2.price(type='text', name='price2')
+                                  | р/час
+
+                        .search-form__title О преподавателе:
+                        .sex
+                          .checkbox
+                            input(type="checkbox" class="checkbox" id="checkbox-51")
+                            label(for="checkbox-51") <span></span> М
+
+                          .checkbox
+                            input(type="checkbox" class="checkbox" id="checkbox-52")
+                            label(for="checkbox-52") <span></span> Ж
+
+                        .form-group
+                          input(type="text" placeholder="Уровень знаний")
+                        .form-group
+                          input(type="text" placeholder="Опыт работы")
+
+                        button(type="submit").btn.pull-right Искать
+                          
+
+
+                .teacher-card
+                  .teacher-card__wraper
+
+                    .teacher-card__left-aside
+
+                      .teacher-panel
+                        .teacher-panel__avatar
+                          img(src="https://api.fnkr.net/testimg/105x105/c4c4c4/FFF/?text=105x105", alt="")
+                        .teacher-panel__indent
+                          .rating-wrap
+                            .rating-title рейтинг
+                            ul.rating
+                              li.current
+                                span.star1
+                              li
+                                span.star2
+                              li
+                                span.star3
+                              li
+                                span.star4
+                              li
+                                span.star5
+
+                          .rating-wrap
+                            .rating-title цены
+                            ul.prices-rating
+                              li.current(style='width:37%;')
+                                span.point-1
+                              li
+                                span.point-2
+                              li
+                                span.point-3
+                              li
+                                span.point-4
+
+                          a(href="#!").teacher-panel__link 97 отзывов
+
+                    .teacher-card__body
+                      .teacher-info
+                        .teacher-info__name Смирнова Карина Игоревна
+                        .teacher-info__profession репетитор по английскому языку 
+                        .teacher-info__description <span class="teacher-info__description-title">Образование:</span> Кемеровский государственный университет, факультет романо-германской филологии, квалификация – преподаватель немецкого языка и литературы, переводчик (1996 г.). Стипендия DAAD, летний курс в Германии (1 мес., 2000 г.). Курсы от Гёте-Института при Кемеровском государственном университете, сертификат Кассель, специальность – теория и практика преподавания немецкого как иностранного (2005 г.). Участник межрегиональных семинаров мультипликаторов по языковой работе (2007-2009 гг.).
+                        
+                        .teacher-info__description 
+                          div <span class="teacher-info__description-title">Опыт преподавания :</span>  17 лет:
+                          div учитель в школе (1996 г.)... 
+                            a(href="#!").teacher-info__more читать далее о преподавателе
+                    
+                  .teacher-card__right-aside
+                    .link-wrap
+                      a(href="#!").link.link--small.link--green <span class="mail-icon"></span> Отправить запрос
+
+                      a(href="#!").link.link--small.link--grey <span class="file-icon"></span> выбрать анкету
+                    .b-description-wrap
+                      .b-description
+                        .b-description__title.b-description__title--location Район:
+                        .b-description__text Нижний Тагил
+                        .b-description__text Ленинский район
+                        .b-description__text Выезд: Нижний Тагил.
+
+                      .b-description
+                        .b-description__title.b-description__title--price Цены и варианты занятий:
+                        .b-description__text Ставка: 263-450 руб. / 45 мин.
+                        .b-description__text Дистанционно (Скайп): 263-450 руб. / 45 мин.
+                        .b-description__text Для взрослых: 450 руб. / 45 мин.
+                        .b-description__text Длительность занятия: 60 мин.
+            
+                .teacher-card
+                  .teacher-card__wraper
+
+                    .teacher-card__left-aside
+
+                      .teacher-panel
+                        .teacher-panel__avatar
+                          img(src="https://api.fnkr.net/testimg/105x105/c4c4c4/FFF/?text=105x105", alt="")
+                        .teacher-panel__indent
+                          .rating-wrap
+                            .rating-title рейтинг
+                              ul.rating
+                                li.current(style='width:40%;')
+                                  span.star1
+                                li
+                                  span.star2
+                                li
+                                  span.star3
+                                li
+                                  span.star4
+                                li
+                                  span.star5
+
+                          .rating-wrap
+                            .rating-title цены
+                              ul.prices-rating
+                                li.current(style='width:37%;')
+                                  span.point-1
+                                li
+                                  span.point-2
+                                li
+                                  span.point-3
+                                li
+                                  span.point-4
+
+                          a(href="#!").teacher-panel__link 97 отзывов
+
+                    .teacher-card__body
+                      .teacher-info
+                        .teacher-info__name Смирнова Карина Игоревна
+                        .teacher-info__profession репетитор по английскому языку 
+                        .teacher-info__description <span class="teacher-info__description-title">Образование:</span> Кемеровский государственный университет, факультет романо-германской филологии, квалификация – преподаватель немецкого языка и литературы, переводчик (1996 г.). Стипендия DAAD, летний курс в Германии (1 мес., 2000 г.). Курсы от Гёте-Института при Кемеровском государственном университете, сертификат Кассель, специальность – теория и практика преподавания немецкого как иностранного (2005 г.). Участник межрегиональных семинаров мультипликаторов по языковой работе (2007-2009 гг.).
+                        
+                        .teacher-info__description 
+                          div <span class="teacher-info__description-title">Опыт преподавания :</span>  17 лет:
+                          div учитель в школе (1996 г.)... 
+                            a(href="#!").teacher-info__more читать далее о преподавателе
+                    
+                  .teacher-card__right-aside
+                    .link-wrap
+                      a(href="#!").link.link--small.link--green <span class="mail-icon"></span> Отправить запрос
+
+                      span.link.link--small.link--grey <span class="check-icon"></span> Анкета выбрана
+                    .b-description-wrap
+                      .b-description
+                        .b-description__title.b-description__title--location Район:
+                        .b-description__text Нижний Тагил
+                        .b-description__text Ленинский район
+                        .b-description__text Выезд: Нижний Тагил.
+
+                      .b-description
+                        .b-description__title.b-description__title--price Цены и варианты занятий:
+                        .b-description__text Ставка: 263-450 руб. / 45 мин.
+                        .b-description__text Дистанционно (Скайп): 263-450 руб. / 45 мин.
+                        .b-description__text Для взрослых: 450 руб. / 45 мин.
+                        .b-description__text Длительность занятия: 60 мин.
+                
+
+                .pagination-wrap
+                  div.pagination-title Показаны анкеты: 20-26 из 2451
+                  ul.pagination
+                    li
+                      a(href='#') <
+                    li
+                      a(href='#') 1
+                    li
+                      a(href='#') 2
+                    li
+                      a(href='#') 3
+                    li
+                      a(href='#') 4
+                    li
+                      a(href='#') 5
+                    li.active
+                      a(href='#') 6
+                    li
+                      a(href='#') 7
+                    li
+                      a(href='#') 8
+                    li
+                      a(href='#') >
+
+            aside.right-aside.col-md-4.col-lg-3
+              ul.subject-list
+                li
+                  span 13500
+                  a(href="") математика
+                li
+                  span 702
+                  a(href="") физика
+                li
+                  span 703
+                  a(href="") информатика
+                li
+                  span 704
+                  a(href="") программирование
+                li
+                  span 705
+                  a(href="") химия
+                li
+                  span 706
+                  a(href="") биология
+                li
+                  span 15800
+                  a(href="") русский язык
+                li
+                  span 708
+                  a(href="") экономика
+                li
+                  span 709
+                  a(href="") история
+                li
+                  span 7010
+                  a(href="") обществознание
+                li
+                  span 7011
+                  a(href="") литература
+                li
+                  span 16084
+                  a(href="") география
+                li
+                  span 7013
+                  a(href="") начальная школа
+                li
+                  span 7014
+                  a(href="") английский язык
+                li
+                  span 7015
+                  a(href="") немецкий язык
+                li
+                  span 7016
+                  a(href="") французский язык
+                li
+                  span 7017
+                  a(href="") китайский язык
+                li
+                  span 7018
+                  a(href="") испанский язык
+                li
+                  span 7019
+                  a(href="") итальянский язык
+                li
+                  span 7020
+                  a(href="") японский язык
+                li
+                  span 7021
+                  a(href="") музыка
+                li
+                  span 7022
+                  a(href="") подготовка к школе
+                li
+                  span 7023
+                  a(href="") логопеды
+                li
+                  span 7024
+                  a(href="") другие предметы
+              
+              .divider-white
+
+              .aside-title Узнайте, кто из 2450 репетиторов подходит именно вам
+
+              form.recommend-form
+                .form-group
+                  textarea.recommend-form__textarea(placeholder="Я ищу репетитора с опытом и хорошими отзывами")
+                .form-group
+                  input.recommend-form__input(type="text" placeholder="Ваше имя")
+                .form-group
+                  input.recommend-form__input(type="text" placeholder="Ваш телефон")
+                button(type="submit").recommend-form__submit Получить рекомендации
+                  span быстро и бесплатно
+
+              .divider-white
+
+              .aside-title.aside-title--text-upper Мы рекомендуем:
+
+              .teacher-list
+                .teacher-preiew
+                  .teacher-preiew__wrap
+                    .teacher-preiew__avatar
+                      img(src="https://api.fnkr.net/testimg/65x65/c4c4c4/FFF/?65x65", alt="avatar")
+                    .teacher-preiew__name Смирнова Карина Игоревна
+                    .teacher-preiew__profession репетитор по английскому языку
+                  .teacher-preiew__description  УрФУ им. Б.Н. Ельцина (УрГУ  им. А.М. Горького), физический факультет, кафедра теоретической  физики (2004 г.).
+                .teacher-preiew
+                  .teacher-preiew__wrap
+                    .teacher-preiew__avatar
+                      img(src="https://api.fnkr.net/testimg/65x65/c4c4c4/FFF/?65x65", alt="avatar")
+                    .teacher-preiew__name Смирнова Карина Игоревна
+                    .teacher-preiew__profession репетитор по английскому языку
+                  .teacher-preiew__description  УрФУ им. Б.Н. Ельцина (УрГУ  им. А.М. Горького), физический факультет, кафедра теоретической  физики (2004 г.).
+                .teacher-preiew
+                  .teacher-preiew__wrap
+                    .teacher-preiew__avatar
+                      img(src="https://api.fnkr.net/testimg/65x65/c4c4c4/FFF/?65x65", alt="avatar")
+                    .teacher-preiew__name Смирнова Карина Игоревна
+                    .teacher-preiew__profession репетитор по английскому языку
+                  .teacher-preiew__description  УрФУ им. Б.Н. Ельцина (УрГУ  им. А.М. Горького), физический факультет, кафедра теоретической  физики (2004 г.).
+                .teacher-preiew
+                  .teacher-preiew__wrap
+                    .teacher-preiew__avatar
+                      img(src="https://api.fnkr.net/testimg/65x65/c4c4c4/FFF/?65x65", alt="avatar")
+                    .teacher-preiew__name Смирнова Карина Игоревна
+                    .teacher-preiew__profession репетитор по английскому языку
+                  .teacher-preiew__description  УрФУ им. Б.Н. Ельцина (УрГУ  им. А.М. Горького), физический факультет, кафедра теоретической  физики (2004 г.).
+
+          
+
+      //= template/footer.jade

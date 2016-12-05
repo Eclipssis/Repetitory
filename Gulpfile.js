@@ -25,7 +25,7 @@ var path = {
         fonts: 'build/fonts/'
     },
     src: {
-        html: 'app/*.jade',
+        html: 'app/**/*.jade',
         js: 'app/js/*.js',
         style: 'app/styles/main.sass',
         img: 'app/images/**/*.*',
@@ -62,7 +62,9 @@ gulp.task('clean', function (cb) {
 gulp.task('html:build', function () {
     gulp.src(path.src.html) 
         .pipe(rigger())
-        .pipe(jade()) 
+        .pipe(jade({
+            pretty: true
+        })) 
         .pipe(gulp.dest(path.build.html))
         .pipe(reload({stream: true}));
 });

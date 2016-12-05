@@ -1,0 +1,118 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle
+        .container
+          .row.flex-row
+            .col-md-8.col-lg-9
+              .content.content--paddng-right-20
+                h1.title-h1 Библиотека
+
+                #accordion.panel-group.libruary-panel
+                  .panel.panel-default
+                    .panel-heading
+                      h4.panel-title
+                        a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne')
+                          | Авторские методические материалы
+                    #collapseOne.panel-collapse.collapse.in
+                      .panel-body
+                        ul
+                          li
+                            a(href="#!") Интересные логические задачи
+                          li
+                            a(href="#!") Варианты вступительных экзаменов по математике
+                          li
+                            a(href="#!") Варианты экзаменов в МАТИ
+                          li
+                            a(href="#!") Российский Университет Дружбы Народов (РУДН) (4)
+                          li
+                            a(href="#!") Высшая школа экономики (РГУ ВШЭ)
+                          li
+                            a(href="#!") Варианты экзаменов в РГУ нефти и газа им. Губкина
+                          li
+                            a(href="#!") Варианты экзаменов в МГУ (2)
+                          li
+                            a(href="#!") Варианты экзаменов в СПбГУ (2003)
+                          li
+                            a(href="#!") Варианты экзаменов в МФТИ (4)
+                          li
+                            a(href="#!") Варианты экзаменов в МГТУ им. Баумана
+                          li
+                            a(href="#!") Варианты экзаменов в МГСУ
+                          li
+                            a(href="#!") Варианты экзаменов в МГАИ
+                          li
+                            a(href="#!") Варианты экзаменов в МГАПИ
+                          li
+                            a(href="#!") Варианты экзаменов в МГАВТ
+                          li
+                            a(href="#!") Тест в английскую школу. (2)
+                          li
+                            a(href="#!") Задачи с решениями по математике. Школьная программа.
+                          li
+                            a(href="#!") Геометрическая сказка для девятиклассников «В мире площадей»
+                          li
+                            a(href="#!") Листки по арифметике для 5 и 6 классов (26)
+                          li
+                            a(href="#!") Задачник по арифметике и самой элементарной алгебре для учащихся 6 и 7 классов
+                          li
+                            a(href="#!") Неравенства
+                          li
+                            a(href="#!") Задачи по геометрии: планиметрия.
+                          li
+                            a(href="#!") Текстовые задачи по математике
+                          li
+                            a(href="#!") Уравнения и неравенства с модулем
+                          li
+                            a(href="#!") Задачи с параметром
+                          li
+                            a(href="#!") Интересные задачи (часть 2)
+                          li
+                            a(href="#!") Школьные экзамены по математике
+                          li
+                            a(href="#!") СУНЦ МГТУ, 10 кл. (2004), ч. 1
+                          li
+                            a(href="#!") СУНЦ МГТУ, 10 кл. (2004), ч. 2
+                          li
+                            a(href="#!") Школьные олимпиады по математике
+                          li
+                            a(href="#!") Московская региональная олимпиада школьников по математике, МИРЭА, 2004.
+                          li
+                            a(href="#!") Олимпиада для поступающих в профильную группу 10 класса гимназии №45.
+                  .panel.panel-default
+                    .panel-heading
+                      h4.panel-title
+                        a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo')
+                          | Задачи по математике
+                    #collapseTwo.panel-collapse.collapse
+                      .panel-body
+                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  .panel.panel-default
+                    .panel-heading
+                      h4.panel-title
+                        a(data-toggle='collapse', data-parent='#accordion', href='#collapseThree')
+                          | Задачи по физике
+                    #collapseThree.panel-collapse.collapse
+                      .panel-body
+                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            
+            aside.right-aside.col-md-4.col-lg-3
+              .cloud-links
+                a(href="#!").font-size-11 авторские статьи 
+                a(href="#!").fotn-size-16 английский язык
+                a(href="#!").fotn-size-9 археология
+                a(href="#!").fotn-size-18 биология
+                a(href="#!").fotn-size-22 ЕГЭ
+                a(href="#!").fotn-size-20 испанский язык
+                a(href="#!").fotn-size-27 физика
+
+
+
+      //= template/footer.jade

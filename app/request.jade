@@ -1,0 +1,102 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle
+        .container
+          .content 
+            h1.title-h1 Оформление заявки
+            form.request-form
+              .row
+                .flex-col
+                  .section-1
+                    .subtitle.subtitle--upper ВАШИ КОНТАКТЫ
+
+                    .form-group
+                      input(type="text" placeholder="Ваше имя*")
+                    .form-group
+                      input(type="text" placeholder="Телефон:*")
+                    .form-group
+                      input(type="text" placeholder="E-mail")
+
+                    .form-captoin Мы можем предложить вам еще несколько наиболее подходящих кандидатур репетиторов, если вы опишете  дополнительной информации, кого вы ищете и для каких целей.
+
+                .flex-col
+                  .section-2
+                    .subtitle Дополнительная информация
+
+                    .form-group
+                      input(type="text" placeholder="Предмет")
+
+                    .filter-group
+                      .search-form__title Стоимость
+                      .slider-price
+                        form(action='#', method='#')
+                          #sliderPrice
+                          .prices-wrap
+                            label(for='price')
+                              | от
+                              span#price.price(type='text', name='price')
+                              | р/час
+                            label(for='price2')
+                              | до
+                              span#price2.price(type='text', name='price2')
+                              | р/час
+
+                    .subtitle О преподавателе:
+                    .sex
+                      .checkbox
+                        input(type="checkbox" class="checkbox" id="checkbox-51")
+                        label(for="checkbox-51") <span></span> М
+
+                      .checkbox
+                        input(type="checkbox" class="checkbox" id="checkbox-52")
+                        label(for="checkbox-52") <span></span> Ж
+
+                    .form-group
+                      input(type="text" placeholder="Уровень знаний")
+                    .form-group
+                      input(type="text" placeholder="Опыт работы")
+
+                    button(type="submit").btn.pull-right Искать
+
+                .flex-col
+                  .section-3
+                    .subtitle Выбранные репетиторы:
+                    
+                    .teacher-preview
+                      .teacher-preview__avatar
+                        img(src="https://api.fnkr.net/testimg/70x70/c4c4c4/FFF/?text=70x70", alt="")
+                      .teacher-preview__body
+                        .teacher-preview__name Смирнова Карина Игоревна
+                        .teacher-preview__profession репетитор по английскому языку
+
+                    .teacher-preview
+                      .teacher-preview__avatar
+                        img(src="https://api.fnkr.net/testimg/70x70/c4c4c4/FFF/?text=70x70", alt="")
+                      .teacher-preview__body
+                        .teacher-preview__name Смирнова Карина Игоревна
+                        .teacher-preview__profession репетитор по английскому языку
+
+                    .teacher-preview
+                      .teacher-preview__avatar
+                        img(src="https://api.fnkr.net/testimg/70x70/c4c4c4/FFF/?text=70x70", alt="")
+                      .teacher-preview__body
+                        .teacher-preview__name Смирнова Карина Игоревна
+                        .teacher-preview__profession репетитор по английскому языку
+
+                    .teacher-preview
+                      .teacher-preview__avatar
+                        img(src="https://api.fnkr.net/testimg/70x70/c4c4c4/FFF/?text=70x70", alt="")
+                      .teacher-preview__body
+                        .teacher-preview__name Смирнова Карина Игоревна
+                        .teacher-preview__profession репетитор по английскому языку
+
+
+      //= template/footer.jade

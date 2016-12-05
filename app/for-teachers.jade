@@ -1,0 +1,65 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle
+        .container
+          .content
+            h1.title-h1 Регистрация в базе данных специалистов
+
+            .registration-buttons
+              a(href="#!").btn.btn-transparent вход в личный кабинет
+              a(href="#!").btn начать регистрацию 
+
+            .title-h1.text-center Что мы предлагаем?
+
+            .facts
+              .facts__item
+                span.facts-icon-5
+                .facts__title Бесплатное оформление
+                .facts__text и размещение вашей анкеты.
+              .facts__item
+                span.facts-icon-6
+                .facts__title Подбор учеников по вашим пожеланиям
+                .facts__text (район, стоимость, специализация и т.п.).
+              .facts__item
+                span.facts-icon-3
+                .facts__title Оплата услуг сервиса — за результат
+                .facts__text получино от  клиентов сервиса, 90% которых ярко положительны
+              .facts__item
+                span.facts-icon-7
+                .facts__title Доход от каждого заказа
+                .facts__text в случае непродолжительного курса пересчитываем цену заказа и возвращаем вам часть оплаты
+
+            .title-h1.text-center Как зарегистрироваться?
+
+            .registration-faq
+              .left-block
+                ul.registration-list
+                  li <span class="registration-list__counter">1</span> 
+                    span Заполните резюме
+                  li <span class="registration-list__counter">2</span> 
+                    span Изучите и примите договор-оферту
+                  li <span class="registration-list__counter">3</span> 
+                    span Ознакомьтесь с правилами взаимодействия с сервисом и ответьте на контрольные вопросы 
+                  li <span class="registration-list__counter">4</span> 
+                    span После положительного решения, нужно будет пройти собеседование по телефону.
+
+              .right-block
+                .registration-caption
+                  .registration-caption__icon
+                  .registration-caption__body
+                    span.label-1 Первичная регистрация </br> (до собеседования) </br> занимает в среднем
+                    span.label-2 10-15 минут
+
+                .btn.registration-btn начать регистрацию 
+
+
+
+      //= template/footer.jade

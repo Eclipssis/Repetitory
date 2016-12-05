@@ -1,0 +1,268 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle
+        .container
+          .content
+            h1.title-h1 Модалки
+
+            ul.modal-list
+              li
+                a(data-toggle='modal', data-target='#add-review-repetitor').btn Добавление отзыва о репетиторе
+              li
+                a.btn(data-toggle='modal', data-target='#add-review-servise') Добавление отзыва о сервисе 
+              li
+                a.btn(data-toggle='modal', data-target='#authorization') Авторизация
+              li
+                a.btn(data-toggle='modal', data-target='#send-request') Отправка запроса репетитору
+            
+            // add repetitor review Modal
+            #add-review-repetitor.modal.fade(tabindex='-1', role='dialog', aria-labelledby='add-reviewLabel', aria-hidden='true')
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                    h4.modal-title Добавление отзыва о репетиторе
+                  .modal-body
+                    p Ваш отзыв нам нужен для того, чтобы сделать «Ваш репетитор» ещё лучше, удобнее и качественнее.
+                    p Напишите своё мнение о сайте, о работе администратора, о том, насколько сервис соответствовал вашим ожиданиям.
+                    p Все отзывы направляются в службу контроля качества
+
+                    form.modal-form
+                      .modal-form__block
+                        .row
+                          .col-sm-6.col-md-5
+                            .form-group
+                              input(type="text" placeholder="Ваше имя").form-control
+                          .col-sm-6.col-md-7
+                            .form-group
+                              input(type="text" placeholder="ФИО репетитора полностью").form-control
+
+                        
+                        .row
+                          .col-sm-6.col-md-5
+                            .form-group
+                              input(type="text" placeholder="Ваш телефон").form-control
+                            .form-group
+                              input(type="text" placeholder="Ваш телефон").form-control
+                          .col-sm-6.col-md-7
+                            .form-group
+                              textarea(placeholder="Ваш отзыв о репетиторе*")
+
+                      .modal-form__block
+                        .form-group
+                          .row
+                            label.col-md-6.col-lg-5.control-label(for='inputPassword3') Общая оценка:
+                            .col-sm-6
+                              select
+                                option option 1
+                                option option 2
+                                option option 3
+
+                        .form-group
+                          .row
+                            label.col-md-6.col-lg-5.control-label(for='inputPassword3') Результативность занятий:
+                            .col-sm-6
+                              select
+                                option option 1
+                                option option 2
+                                option option 3
+
+                        .form-group
+                          .row
+                            label.col-md-6.col-lg-5.control-label(for='inputPassword3') Умение заинтересовать предметом:
+                            .col-sm-6
+                              select
+                                option option 1
+                                option option 2
+                                option option 3
+
+                        .form-group
+                          .row
+                            label.col-md-6.col-lg-5.control-label(for='inputPassword3') Уровень знаний преподавателя:
+                            .col-sm-6
+                              select
+                                option option 1
+                                option option 2
+                                option option 3
+
+                        .form-group
+                          .row
+                            label.col-md-6.col-lg-5.control-label(for='inputPassword3') Наличие чёткой методики:
+                            .col-sm-6
+                              select
+                                option option 1
+                                option option 2
+                                option option 3
+
+                        .form-group
+                          .row
+                            label.col-md-6.col-lg-5.control-label(for='inputPassword3') Пунктуальность, обязательность:
+                            .col-sm-6
+                              select
+                                option option 1
+                                option option 2
+                                option option 3
+
+                        .form-group
+                          .row
+                            label.col-md-6.col-lg-5.control-label(for='inputPassword3') Помещение для занятий (если есть):
+                            .col-sm-6
+                              select
+                                option option 1
+                                option option 2
+                                option option 3
+
+                        .form-group
+                          .row
+                            label.col-md-6.col-lg-5.control-label(for='inputPassword3') Авторитетность преподавателя
+                            .col-sm-6
+                              select
+                                option option 1
+                                option option 2
+                                option option 3
+
+                        .form-group
+                          .row
+                            label.col-md-6.col-lg-5.control-label(for='inputPassword3') Строгость, настойчивость:
+                            .col-sm-6
+                              select
+                                option option 1
+                                option option 2
+                                option option 3
+
+                        .form-group
+                          .row
+                            label.col-md-6.col-lg-5.control-label(for='inputPassword3') Готовность помочь:
+                            .col-sm-6
+                              select
+                                option option 1
+                                option option 2
+                                option option 3
+
+                      .modal-form__block
+
+                        .form-group
+                          .row
+                            label.col-md-6.col-lg-5.control-label(for='inputPassword3') С какой вероятностью вы порекомендуете наш сервис своим друзьям/знакомым?
+                            .col-sm-6
+                              select
+                                option option 1
+                                option option 2
+                                option option 3
+                      
+                      .modal-form__block
+                        .form-group
+                          .row
+                            .col-sm-6.col-sm-offset-4
+                              button(type="submit").btn Отправить 
+
+            // add review about servise Modal
+            #add-review-servise.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                    h4#myModalLabel.modal-title Добавление отзыва о сервисе
+                  .modal-body
+                    p Ваш отзыв нам нужен для того, чтобы сделать «Ваш репетитор» ещё лучше, удобнее и качественнее.
+                    p Напишите своё мнение о сайте, о работе администратора, о том, насколько сервис соответствовал вашим ожиданиям.
+                    p Все отзывы направляются в службу контроля качества
+
+                    form.modal-form
+                      .modal-form__block
+                        .row
+                          .col-sm-6.col-md-5
+                            .form-group
+                              input(type="text" placeholder="Ваше имя").form-control
+                          .col-sm-6.col-md-7
+                            .form-group
+                              input(type="text" placeholder="ФИО репетитора полностью").form-control
+
+                        .row
+                          .col-sm-6.col-md-5
+                            .form-group
+                              input(type="text" placeholder="Ваш телефон").form-control
+                            .form-group
+                              input(type="text" placeholder="Ваш телефон").form-control
+                          .col-sm-6.col-md-7
+                            .form-group
+                              textarea(placeholder="Ваш отзыв о репетиторе*")
+                      
+                      .modal-form__block
+                        .row
+                          .col-sm-8
+                            .form-group
+                              label.control-label С какой вероятностью вы порекомендуете наш сервис своим друзьям/знакомым?
+                            .form-group
+                              select
+                                option option 1
+                                option option 2
+                                option option 3
+                          .col-sm-4.self-end
+                            .form-group
+                              button(type="submit").btn Отправить
+                            
+            // authorization servise Modal
+            #authorization.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+              .modal-dialog.modal-dialog__small
+                .modal-content
+                  .modal-header
+                    button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                    h4#myModalLabel.modal-title Авторизация
+                  .modal-body
+
+                    form.modal-form
+                      .form-group
+                        input(type="text" placeholder="Логин").form-control
+                      .form-group
+                        input(type="text" placeholder="Пароль").form-control
+
+                      .checkbox.checkbox-modal
+                        input(type="checkbox" class="checkbox" id="checkbox-3")
+                        label(for="checkbox-3") <span></span>
+                          .checkbox__text Запомнить меня
+
+                      .form-group
+                        button(type="submit").btn.btn-max Войти
+                      .text-center Забыли пароль?
+
+            // send request Modal
+            #send-request.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+              .modal-dialog.modal-dialog__default
+                .modal-content
+                  .modal-header
+                    button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                    h4#myModalLabel.modal-title Отправка запроса репетитору
+                  .modal-body
+
+                    form.modal-form
+                      
+                      .row.flex-row
+                        .left-block
+                          .form-group
+                            input(type="text" placeholder="Ваше имя").form-control
+                          .form-group
+                            input(type="text" placeholder="Ваш телефон").form-control
+                          .form-group
+                            textarea(placeholder="Комментарий:")
+                          .form-group
+                            button(type="submit").btn.btn-max Отправить
+
+                        .right-block
+                          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et laudantium amet, quod, expedita repudiandae alias ducimus
+                          .phone-for Телефон для справок
+                            span 8 (343) 317-56-76
+
+                          
+
+                      
+
+      //= template/footer.jade

@@ -1,0 +1,306 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle
+        .container
+          .row
+            .col-md-8.col-lg-9
+              .content.content--paddng-right-20
+
+                .form-header
+                  .block-title
+                    h1 Анкеты репетиторов 
+                    .current-location
+                      a(href="#!") Екатеринбург
+                      span , Свердловская область
+
+                  .caption Не хотите перелистывать самостоятельно все 2450 анкет?  <a href="#!" class="link link--blue">Напишите</a> кого вы ищете, и вам посоветуют оптимальный вариант
+             
+                form.teacher-filter
+                  .left-wrap
+                    select
+                      option Предмет
+                      option Option 1
+                      option Option 2
+                      
+                    select
+                      option Район(ы)
+                      option Option 1
+                      option Option 2
+
+                    select
+                      option Цена
+                      option Option 1
+                      option Option 2
+                            
+                  .right-wrap     
+                    button(type="submit").btn Искать
+                    a.btn.btn-transparent.js-toogle-btn Расширенный поиск
+
+                  .hidden-block.js-show-block
+                    .advanced-settings
+                      .filter-group
+                        span.filter-title Параметры
+                        input(type="text" placeholder="Район")
+                        input(type="text" placeholder="Место")
+                        input(type="text" placeholder="Продолжительность")
+                      .filter-group
+                        span.filter-title О преподавателе:
+                        .sex
+                          .checkbox
+                            input(type="checkbox" class="checkbox" id="checkbox-1")
+                            label(for="checkbox-1") <span></span> М
+
+                          .checkbox
+                            input(type="checkbox" class="checkbox" id="checkbox-2")
+                            label(for="checkbox-2") <span></span> Ж
+
+                        input(type="text" placeholder="Уровень знаний")
+                        input(type="text" placeholder="Опыт работы")
+                      .filter-group
+                        span.filter-title Стоимость
+                        .slider-price
+                          form(action='#', method='#')
+                            #sliderPrice
+                            .prices-wrap
+                              label(for='price')
+                                | от
+                                span#price.price(type='text', name='price')
+                                | р/час
+                              label(for='price2')
+                                | до
+                                span#price2.price(type='text', name='price2')
+                                | р/час
+
+                .teacher-card
+                  .teacher-card__wraper
+
+                    .teacher-card__left-aside
+
+                      .teacher-panel
+                        .teacher-panel__avatar
+                          img(src="https://api.fnkr.net/testimg/105x105/c4c4c4/FFF/?text=105x105", alt="")
+                        .teacher-panel__indent
+                          .rating-wrap
+                            .rating-title рейтинг
+                              ul.rating
+                                li.current(style='width:40%;')
+                                  span.star1
+                                li
+                                  span.star2
+                                li
+                                  span.star3
+                                li
+                                  span.star4
+                                li
+                                  span.star5
+
+                          .rating-wrap
+                            .rating-title цены
+                              ul.prices-rating
+                                li.current(style='width:37%;')
+                                  span.point-1
+                                li
+                                  span.point-2
+                                li
+                                  span.point-3
+                                li
+                                  span.point-4
+
+                          a(href="#!").teacher-panel__link 97 отзывов
+
+                    .teacher-card__body
+                      .teacher-info
+                        .teacher-info__name Смирнова Карина Игоревна
+                        .teacher-info__profession репетитор по английскому языку 
+                        .teacher-info__description <span class="teacher-info__description-title">Образование:</span> МГУ им. М.В. Ломоносова, филологический факультет, специальность – русский язык и литература (диплом с отличием, 1992 г.); аспирантура МГУ им. М.В. Ломоносова (1998 г.); Институт европейских культур, специальность – культурология (диплом с отличием, 2006 г.).Сертификат по курсу «Методика преподавания РКИ» (РУДН, факультет повышения квалификации преподавателей русского языка как иностранного).Сертификат FCE.Автор научных публикаций, переводов, мультимедийного учебника РКИ, статей и лекционных курсов для школьников.Редактор периодических изданий и книг по социологии, политологии, истории культуры – с 1993 года.Ведущий специалист фонда «Общественное мнение» (1998-2006 гг.).Постоянный автор учебно-методических журналов «Литература» и «Искусство» (издательский дом «Первое сентября»). Участник международных исследовательских проектов – с 2001 года.
+                        .teacher-info__description <span class="teacher-info__description-title">Опыт преподавания</span> – с 1991 года (вузы, средняя школа, образовательные центры).Репетиторская деятельность – более 10 лет (абитуриенты МГУ, МГИМО, РГГУ, МГПУ, РУДН, НИУ ВШЭ, Литинститута, РАНХ и ГС, РЭА, ФА, РГСУ, ВГИК и др.). Профессиональный репетитор с государственной регистрацией.Автор статей «Подготовка к ЕГЭ с репетитором: рекомендации для учеников (и их родителей)» и «Разовая консультация при подготовке к ЕГЭ: когда она нужна и чего от нее ждать?».Ведущий методических вебинаров и обладатель особых профессиональных наград от сервиса PROFI.RU.
+                        .teacher-info__description Идет запись в очные и дистанционные мини-группы для подготовки к ЕГЭ-2017 (занятия с сентября 2016 года). Жду ответственных учеников, готовых исправно посещать занятия и неукоснительно выполнять домашние задания.
+                        .teacher-info__description Ориентация на самые высокие стандарты качества. Индивидуальный подход. Набор учеников для индивидуальных занятий в 2016-17 уч. году закончен.
+                    
+                  .teacher-card__right-aside
+                    .link-wrap
+                      a(href="#!").link.link--small.link--green <span class="mail-icon"></span> Отправить запрос
+
+                      a(href="#!").link.link--small.link--grey <span class="file-icon"></span> выбрать анкету
+                    .b-description-wrap
+                      .b-description
+                        .b-description__title.b-description__title--location Район:
+                        .b-description__text Нижний Тагил
+                        .b-description__text Ленинский район
+                        .b-description__text Выезд: Нижний Тагил.
+
+                      .b-description
+                        .b-description__title.b-description__title--price Цены и варианты занятий:
+                        .b-description__text Ставка: 263-450 руб. / 45 мин.
+                        .b-description__text Дистанционно (Скайп): 263-450 руб. / 45 мин.
+                        .b-description__text Для взрослых: 450 руб. / 45 мин.
+                        .b-description__text Длительность занятия: 60 мин.
+                      .b-description__images
+                        img(src="https://api.fnkr.net/testimg/280x95/c4c4c4/FFF/?270x95", alt="avatar")
+
+                  .iframe-wrap
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/foQ1fYcqXAg" frameborder="0" allowfullscreen></iframe>
+                  
+                  .about-teacher
+                    .about-teacher__block
+                      p.uppercase Что я предлагаю?
+                      p Школьникам:
+                      p для старших классов: выявление и устранение пробелов по русскому языку, литературе и обществознанию;
+                      p для 9 классов: подготовка к изложению и ГИА по русскому языку;
+                      p для 11 классов: общий курс подготовки к ЕГЭ по русскому, литературе и обществознанию и специализированный курс по эссе;
+                      p для 6–10 классов: подготовка к олимпиадам по русскому и литературе («Русский Медвежонок», «Ломоносов» и др.);
+                      p развитие речи;
+                      p английский язык по курсу средней школы (кроме ЕГЭ).
+                      p Студентам:
+                      p сопровождение курсов культурологии, практической стилистики, риторики, культуры речи;
+                      p подготовка к экзаменам, консультации.
+                      p Взрослым:
+                      p подготовка устных выступлений;
+                      p Survival English, общий курс английского языка.
+                    .about-teacher__block
+                      p Преподавательское кредо и опыт работы
+                      p Многие люди противопоставляют «гуманитариев» «технарям». Они уверены, что язык и литература — нечто возвышенное и неопределенное, то, что можно постигнуть чувством, а не разумом. Это не совсем так.
+                      p Я не раз убеждалась, что наиболее важным для гуманитариев оказывается умение думать и быть точным. «Кто ясно мыслит, ясно излагает», — сказал в XVII веке Никола Буало, поэт, сформулировавший законы, по которым литература существовала несколько веков. Слово выражает мысль и хотя бы поэтому заслуживает уважения и внимания. Понять, что хочешь сказать, и найти для мысли адекватную языковую форму — вот чему я учу своих учеников. А толковый, орфографический, орфоэпический словари, энциклопедии и грамматические справочники — необходимые инструменты поиска такой формы.
+                      p Все мои профессиональные навыки и умения связаны с работой со словом, тестом, информацией.
+                      p С 1991 года я занимаюсь преподаванием. Читала курсы русской литературы и культурологии студентам. Занималась русским языком с российскими школьниками и с иностранцами (в том числе — за границей, в Италии). Учила английскому детей в средней школе и взрослых в образовательном центре, специализирующемся на корпоративном обучении. Вела тренинги по речевым коммуникациям. Не забываю о научной работе. Принимала участие в проектах отдела литературоведения ИНИОН РАН. Имею более 50 научных и научно-популярных публикаций по русской литературе и культуре первой пол. XX в. в книгах и периодических изданиях. Как автор сотрудничала с издательствами «Республика», «Роспэн», «Интелвак», «Интрада», «Терра».
+                      p С 2001 года участвовала в нескольких международных исследовательских проектах с университетами США и Германии. Долгое время занималась переводами. Публиковалась в журнале «Новое литературное обозрение». Как редактор специализируюсь на текстах социологической и общественно-политической тематики. Участвовала в сопровождении ряда избирательных кампаний, писала пресс-релизы, вела издательские проекты.
+                    .about-teacher__block
+                      p Образование, дипломы, сертификаты 
+                      p В 1992 году закончила с отличием МГУ им. М. В. Ломоносова по специальности «Русский язык и литература».
+                      p В 1998 году, отучившись в аспирантуре МГУ, защитила диссертацию на соискание ученой степени кандидата филологических наук.
+                      p В 2006 году получила второе высшее образование по специальности «Культурология» (диплом с отличием) в Институте европейских культур (программа TEMPUS/TASIS; соучредителями института являются РГГУ и Рурский университет в г. Бохум, Германия).
+                      p Имею сертификаты по курсу «Методика преподавания РКИ» (РУДН, факультет повышения квалификации преподавателей русского языка как иностранного) и по английскому языку FCE (University of Cambridge, ESOL Examinations).
+
+            aside.right-aside.col-md-4.col-lg-3
+              ul.subject-list
+                li
+                  span 13500
+                  a(href="") математика
+                li
+                  span 702
+                  a(href="") физика
+                li
+                  span 703
+                  a(href="") информатика
+                li
+                  span 704
+                  a(href="") программирование
+                li
+                  span 705
+                  a(href="") химия
+                li
+                  span 706
+                  a(href="") биология
+                li
+                  span 15800
+                  a(href="") русский язык
+                li
+                  span 708
+                  a(href="") экономика
+                li
+                  span 709
+                  a(href="") история
+                li
+                  span 7010
+                  a(href="") обществознание
+                li
+                  span 7011
+                  a(href="") литература
+                li
+                  span 16084
+                  a(href="") география
+                li
+                  span 7013
+                  a(href="") начальная школа
+                li
+                  span 7014
+                  a(href="") английский язык
+                li
+                  span 7015
+                  a(href="") немецкий язык
+                li
+                  span 7016
+                  a(href="") французский язык
+                li
+                  span 7017
+                  a(href="") китайский язык
+                li
+                  span 7018
+                  a(href="") испанский язык
+                li
+                  span 7019
+                  a(href="") итальянский язык
+                li
+                  span 7020
+                  a(href="") японский язык
+                li
+                  span 7021
+                  a(href="") музыка
+                li
+                  span 7022
+                  a(href="") подготовка к школе
+                li
+                  span 7023
+                  a(href="") логопеды
+                li
+                  span 7024
+                  a(href="") другие предметы
+              
+              .divider-white
+
+              .aside-title Узнайте, кто из 2450 репетиторов подходит именно вам
+
+              form.recommend-form
+                .form-group
+                  textarea.recommend-form__textarea(placeholder="Я ищу репетитора с опытом и хорошими отзывами")
+                .form-group
+                  input.recommend-form__input(type="text" placeholder="Ваше имя")
+                .form-group
+                  input.recommend-form__input(type="text" placeholder="Ваш телефон")
+                button(type="submit").recommend-form__submit Получить рекомендации
+                  span быстро и бесплатно
+
+              .divider-white
+
+              .aside-title.aside-title--text-upper Мы рекомендуем:
+
+              .teacher-list
+                .teacher-preiew
+                  .teacher-preiew__wrap
+                    .teacher-preiew__avatar
+                      img(src="https://api.fnkr.net/testimg/65x65/c4c4c4/FFF/?65x65", alt="avatar")
+                    .teacher-preiew__name Смирнова Карина Игоревна
+                    .teacher-preiew__profession репетитор по английскому языку
+                  .teacher-preiew__description  УрФУ им. Б.Н. Ельцина (УрГУ  им. А.М. Горького), физический факультет, кафедра теоретической  физики (2004 г.).
+                .teacher-preiew
+                  .teacher-preiew__wrap
+                    .teacher-preiew__avatar
+                      img(src="https://api.fnkr.net/testimg/65x65/c4c4c4/FFF/?65x65", alt="avatar")
+                    .teacher-preiew__name Смирнова Карина Игоревна
+                    .teacher-preiew__profession репетитор по английскому языку
+                  .teacher-preiew__description  УрФУ им. Б.Н. Ельцина (УрГУ  им. А.М. Горького), физический факультет, кафедра теоретической  физики (2004 г.).
+                .teacher-preiew
+                  .teacher-preiew__wrap
+                    .teacher-preiew__avatar
+                      img(src="https://api.fnkr.net/testimg/65x65/c4c4c4/FFF/?65x65", alt="avatar")
+                    .teacher-preiew__name Смирнова Карина Игоревна
+                    .teacher-preiew__profession репетитор по английскому языку
+                  .teacher-preiew__description  УрФУ им. Б.Н. Ельцина (УрГУ  им. А.М. Горького), физический факультет, кафедра теоретической  физики (2004 г.).
+                .teacher-preiew
+                  .teacher-preiew__wrap
+                    .teacher-preiew__avatar
+                      img(src="https://api.fnkr.net/testimg/65x65/c4c4c4/FFF/?65x65", alt="avatar")
+                    .teacher-preiew__name Смирнова Карина Игоревна
+                    .teacher-preiew__profession репетитор по английскому языку
+                  .teacher-preiew__description  УрФУ им. Б.Н. Ельцина (УрГУ  им. А.М. Горького), физический факультет, кафедра теоретической  физики (2004 г.).
+
+
+      //= template/footer.jade
