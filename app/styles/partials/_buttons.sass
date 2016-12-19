@@ -42,9 +42,13 @@
 .btn-large
   padding: 15px
   min-width: 230px  
-
+  
 .btn-max
   width: 100%  
+
+.btn-small
+  font-size: 18px
+  padding: 7px 10px
 
 .btn-transparent
   background-color: transparent
@@ -61,6 +65,17 @@
   border: 2px solid $purple
   &:hover
     background-color: darken($purple, 10%)
+
+.btn-big
+  padding: 20px 15px
+  width: 100%
+  max-width: 300px
+  font-size: 24px
+  margin-bottom: 20px
+  +mobile
+    padding: 15px
+    max-width: 250px
+    font-size: 20px
 
 .btn-purple-transparent
   padding: 8px 15px

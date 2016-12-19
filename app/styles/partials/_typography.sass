@@ -120,7 +120,12 @@ span.cont-mail-icon
 span.question-red-icon
   display: inline-block
   +sprite($question-red)
-
+span.icon-arrow-blue 
+  +sprite($arrow-blue)
+span.icon-arrow-green
+  +sprite($arrow-green)
+span.question-orange-icon
+  +sprite($question-orange)
 span.close-icon
   +sprite($disable)
 
@@ -137,6 +142,7 @@ span.plus
   position: relative
   &:before, &:after
     position: absolute
+    top: -3px
     left: 50%
     margin-left: -10px
     content: ' '
@@ -145,8 +151,22 @@ span.plus
     background-color: $blue
   &:before
     transform: rotate(90deg)
-  
 
+span.plus-orange
+  &:before, &:after
+    background-color: #ff8e00
+
+span.plus-red
+  &:before, &:after
+    background-color: #b50202
+
+span.plus-green
+  &:before, &:after
+    background-color: #00ac99
+
+span.plus-grey
+  &:before, &:after
+    background-color: #c0c0c0
 
 
 .purple-list

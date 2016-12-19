@@ -1070,6 +1070,7 @@
   +tablet
     flex-direction: column
     padding: 0
+    max-width: 100%
 
 .lk-content
   flex: 10 2 300px
@@ -1240,7 +1241,6 @@
 
 .lk-table
   width: 100%
-  margin-bottom: 40px
   min-width: 590px
   span[class*="icon"]
     display: inline-block
@@ -1413,22 +1413,114 @@
 
 
 .status-helpers
-  max-width: 280px
+  display: inline-block
   margin: 20px auto
   text-align: left
   li 
     margin-bottom: 20px
+    display: flex
+    flex-wrap: wrap
   &__title 
+    flex: 1 1 100px
     display: inline-block
     vertical-align: middle
+    color: #768288
+    font-size: 15px
 
   .icon-wrap
     width: 70px
-    display: inline-block
-    text-align: center
+    flex: 0 0 70px
+    display: flex
+    justify-content: center
+    align-items: center
 
   span 
     display: inline-block
     vertical-align: middle
     color: #768288
     font-size: 16px
+
+.table-helpers
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  margin: 30px 0
+  +mobile
+    justify-content: initial
+
+  > div
+    margin: 5px 8px
+
+  .icon-arrow-blue, .icon-arrow-green 
+    display: inline-block
+    margin-right: 10px
+
+  span 
+    font-size: 16px
+    vertical-align: middle
+    color: #768288
+    +mobile
+      font-size: 14px
+
+.lk-tabs  
+  border-bottom: 2px solid #acdddc
+  margin-bottom: 20px
+  > li 
+    margin-right: 0
+    > a 
+      color: #a6a9b0
+      font-size: 18px
+      text-transform: uppercase
+      border: none
+      border-radius: 0px
+      &:hover, &:focus
+        border: none
+        border-radius: 0px
+        background: none
+
+  > li.active
+    margin-bottom: 0
+    position: relative
+    &:before
+      position: absolute
+      z-index: 3
+      top: 37px 
+      left: 50%
+      margin-left: -7.5px
+      content: ' '
+      width: 15px 
+      height: 10px
+      background: url('../images/tabs-arrow.jpg') 0 0 no-repeat 
+    > a 
+      border: none
+      border-radius: 0px
+      color: #525254
+      &:hover, &:focus
+        border: none
+        border-radius: 0px
+
+.report-list
+  li
+    background-color: #f5f8f9
+    padding: 12px 15px
+    &:nth-child(2n)
+      background-color: #ffffff
+      
+
+  a, span 
+    display: inline-block
+    margin-right: 65px
+    font-size: 18px
+    &:last-child
+      margin-right: 0
+
+  a 
+    color: #5093b7
+
+  .comment 
+    font-size: 16px
+    line-height: 18px
+    color: #94a1a8
+    font-style: italic
+    margin-top: 10px
+    max-width: 640px

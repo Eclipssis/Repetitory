@@ -12,6 +12,71 @@ html(xmlns='http://www.w3.org/1999/xhtml')
         .lk-middle-wrap
           .lk-content
             
+            .caption-lk-wrap
+              //= template/lk-caption.jade
+              //= template/lk-caption.jade
+
+            .lk-title Агентский отчёт об оказанных услугах
+
+            form.report-form
+              div
+                span c 
+                select.days
+                  option 01
+                  option 02
+                  option 03
+                select.months
+                  option Июля
+                  option Авгста
+                  option Мая
+                input.years(type="text" placeholder="2016")
+                span.datapiker
+
+              div
+                span по 
+                select.days
+                  option 01
+                  option 02
+                  option 03
+                select.months
+                  option Июля
+                  option Авгста
+                  option Мая
+                input.years(type="text" placeholder="2016")
+                span.datapiker
+
+              button(type="submit").btn.btn-small скачать
+
+
+            ul.report-list
+              li 
+                a(href="#!") 4265144
+                span 29 июл 2015
+                span заявка
+              li 
+                a(href="#!") 4265144
+                span 29 июл 2015
+                span отзанимались
+                span 9 февраля 2013
+              li 
+                a(href="#!") 4265144
+                span 29 июл 2015
+                span заявка
+                div.comment Предлагаю занятия по скайпу. Начинать изучение китайского языка лучше с русским преподавателем, чтобы овладеть базой и понять структуру языка, это ускорит и упростит дальнейшее изучение языка. Тем более, что территориально я проживаю в Китае, провинция Хэйлунцзян.
+              li 
+                a(href="#!") 4265144
+                span 29 июл 2015
+                span заявка
+              li 
+                a(href="#!") 4265144
+                span 29 июл 2015
+                span отзанимались
+                span 9 февраля 2013
+              li 
+                a(href="#!") 4265144
+                span 29 июл 2015
+                span заявка
+                div.comment Предлагаю занятия по скайпу. Начинать изучение китайского языка лучше с русским преподавателем, чтобы овладеть базой и понять структуру языка, это ускорит и упростит дальнейшее изучение языка. Тем более, что территориально я проживаю в Китае, провинция Хэйлунцзян.
 
           .lk-aside
 
@@ -59,3 +124,5 @@ html(xmlns='http://www.w3.org/1999/xhtml')
               a(href="#!").mail mail@repetitors.info
 
               a(href="#!").btn.btn-max позвоните мне
+
+    //= template/scripts.jade
