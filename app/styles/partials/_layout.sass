@@ -20,7 +20,7 @@ html, body
 .middle 
   flex: 1 0 auto
   position: relative
-  // overflow: hidden
+  overflow: hidden
 
 // .container
 //   max-width: 1200px
@@ -47,7 +47,8 @@ html, body
 
 .flex-row
   display: flex
-  flex-wrap: wrap
+  +desktop
+    flex-wrap: wrap
 
 .space-between
   justify-content: space-between
@@ -141,6 +142,7 @@ html, body
   color: #fff
   padding: 30px
   position: relative
+  min-height: 431px
   +desktop-large
     padding: 15px
   +desktop
@@ -148,7 +150,7 @@ html, body
   &:before
     position: absolute
     content: ' '
-    left: 300px
+    left: 100%
     top: 0
     height: 100%
     width: 1000px

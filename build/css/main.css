@@ -46,38 +46,6 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-/*
-  SASS variables are information about icon's compiled state, stored under its original file name
-
-  .icon-home
-    width: $icon-home-width
-
-  The large array-like variables contain all information about a single icon
-  $icon-home: x y offset_x offset_y width height total_width total_height image_path
-
-  At the bottom of this section, we provide information about the spritesheet itself
-  $spritesheet: width height image $spritesheet-sprites
-  */
-/*
-  The provided mixins are intended to be used with the array-like variables
-
-  .icon-home
-    @include sprite-width($icon-home)
-
-  .icon-email
-    @include sprite($icon-email)
-
-  Example usage in HTML:
-    `display: block` sprite:
-    <div class="icon-home"></div>
-
-  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
-/*
-  The `sprites` mixin generates identical output to the CSS template
-    but can be overridden inside of SASS
-
-  @include sprites($spritesheet-sprites)
-  */
 @font-face {
   font-family: 'MyriadPro';
   src: url("../fonts/MyriadPro-Regular.eot");
@@ -99,38 +67,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 700;
   font-style: normal; }
 
-/*
-  SASS variables are information about icon's compiled state, stored under its original file name
-
-  .icon-home
-    width: $icon-home-width
-
-  The large array-like variables contain all information about a single icon
-  $icon-home: x y offset_x offset_y width height total_width total_height image_path
-
-  At the bottom of this section, we provide information about the spritesheet itself
-  $spritesheet: width height image $spritesheet-sprites
-  */
-/*
-  The provided mixins are intended to be used with the array-like variables
-
-  .icon-home
-    @include sprite-width($icon-home)
-
-  .icon-email
-    @include sprite($icon-email)
-
-  Example usage in HTML:
-    `display: block` sprite:
-    <div class="icon-home"></div>
-
-  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
-/*
-  The `sprites` mixin generates identical output to the CSS template
-    but can be overridden inside of SASS
-
-  @include sprites($spritesheet-sprites)
-  */
 /*----------- Typography *
  ------------------------------------------------------------*/
 * {
@@ -426,38 +362,6 @@ span.plus-grey:before, span.plus-grey:after {
 .color-blue-dark {
   color: #34647d; }
 
-/*
-  SASS variables are information about icon's compiled state, stored under its original file name
-
-  .icon-home
-    width: $icon-home-width
-
-  The large array-like variables contain all information about a single icon
-  $icon-home: x y offset_x offset_y width height total_width total_height image_path
-
-  At the bottom of this section, we provide information about the spritesheet itself
-  $spritesheet: width height image $spritesheet-sprites
-  */
-/*
-  The provided mixins are intended to be used with the array-like variables
-
-  .icon-home
-    @include sprite-width($icon-home)
-
-  .icon-email
-    @include sprite($icon-email)
-
-  Example usage in HTML:
-    `display: block` sprite:
-    <div class="icon-home"></div>
-
-  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
-/*
-  The `sprites` mixin generates identical output to the CSS template
-    but can be overridden inside of SASS
-
-  @include sprites($spritesheet-sprites)
-  */
 /*----------- button style *
  ------------------------------------------------------------*/
 .btn {
@@ -580,38 +484,6 @@ span.plus-grey:before, span.plus-grey:after {
   padding: 15px 20px;
   font-size: 18px; }
 
-/*
-  SASS variables are information about icon's compiled state, stored under its original file name
-
-  .icon-home
-    width: $icon-home-width
-
-  The large array-like variables contain all information about a single icon
-  $icon-home: x y offset_x offset_y width height total_width total_height image_path
-
-  At the bottom of this section, we provide information about the spritesheet itself
-  $spritesheet: width height image $spritesheet-sprites
-  */
-/*
-  The provided mixins are intended to be used with the array-like variables
-
-  .icon-home
-    @include sprite-width($icon-home)
-
-  .icon-email
-    @include sprite($icon-email)
-
-  Example usage in HTML:
-    `display: block` sprite:
-    <div class="icon-home"></div>
-
-  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
-/*
-  The `sprites` mixin generates identical output to the CSS template
-    but can be overridden inside of SASS
-
-  @include sprites($spritesheet-sprites)
-  */
 /*----------- Form sryle *
  ------------------------------------------------------------*/
 input.chose_file_input {
@@ -1635,38 +1507,6 @@ textarea {
     vertical-align: sub;
     background: url("../images/datapiker.png") 0 0 no-repeat; }
 
-/*
-  SASS variables are information about icon's compiled state, stored under its original file name
-
-  .icon-home
-    width: $icon-home-width
-
-  The large array-like variables contain all information about a single icon
-  $icon-home: x y offset_x offset_y width height total_width total_height image_path
-
-  At the bottom of this section, we provide information about the spritesheet itself
-  $spritesheet: width height image $spritesheet-sprites
-  */
-/*
-  The provided mixins are intended to be used with the array-like variables
-
-  .icon-home
-    @include sprite-width($icon-home)
-
-  .icon-email
-    @include sprite($icon-email)
-
-  Example usage in HTML:
-    `display: block` sprite:
-    <div class="icon-home"></div>
-
-  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
-/*
-  The `sprites` mixin generates identical output to the CSS template
-    but can be overridden inside of SASS
-
-  @include sprites($spritesheet-sprites)
-  */
 /*----------- Page structur *
  ------------------------------------------------------------*/
 html, body {
@@ -1691,7 +1531,8 @@ html, body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .content {
   padding-top: 50px; }
@@ -1718,9 +1559,11 @@ html, body {
 .flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  display: flex; }
+  @media only screen and (max-width: 992px) {
+    .flex-row {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
 
 .space-between {
   -webkit-box-pack: justify;
@@ -1817,7 +1660,8 @@ html, body {
   background-color: #5093b7;
   color: #fff;
   padding: 30px;
-  position: relative; }
+  position: relative;
+  min-height: 431px; }
   @media only screen and (max-width: 1230px) {
     .right-aside {
       padding: 15px; } }
@@ -1827,7 +1671,7 @@ html, body {
   .right-aside:before {
     position: absolute;
     content: ' ';
-    left: 300px;
+    left: 100%;
     top: 0;
     height: 100%;
     width: 1000px;
@@ -2494,38 +2338,6 @@ html, body {
 
 /*----------- Main blocks *
  ------------------------------------------------------------*/
-/*
-  SASS variables are information about icon's compiled state, stored under its original file name
-
-  .icon-home
-    width: $icon-home-width
-
-  The large array-like variables contain all information about a single icon
-  $icon-home: x y offset_x offset_y width height total_width total_height image_path
-
-  At the bottom of this section, we provide information about the spritesheet itself
-  $spritesheet: width height image $spritesheet-sprites
-  */
-/*
-  The provided mixins are intended to be used with the array-like variables
-
-  .icon-home
-    @include sprite-width($icon-home)
-
-  .icon-email
-    @include sprite($icon-email)
-
-  Example usage in HTML:
-    `display: block` sprite:
-    <div class="icon-home"></div>
-
-  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
-/*
-  The `sprites` mixin generates identical output to the CSS template
-    but can be overridden inside of SASS
-
-  @include sprites($spritesheet-sprites)
-  */
 /*----------- flexslider *
  ------------------------------------------------------------*/
 /* Browser Resets */

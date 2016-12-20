@@ -1,15 +1,4 @@
-/*
-  SASS variables are information about icon's compiled state, stored under its original file name
 
-  .icon-home
-    width: $icon-home-width
-
-  The large array-like variables contain all information about a single icon
-  $icon-home: x y offset_x offset_y width height total_width total_height image_path
-
-  At the bottom of this section, we provide information about the spritesheet itself
-  $spritesheet: width height image $spritesheet-sprites
-  */
 $arrow-blue-name: 'arrow-blue'
 $arrow-blue-x: 309px
 $arrow-blue-y: 0px
@@ -544,28 +533,6 @@ $spritesheet-image: '../images/sprite.png'
 $spritesheet-sprites: ($arrow-blue, $arrow-green, $arrow-next, $arrow-prew, $calendar, $check-blue, $check-purple, $check, $clock, $close-small, $close, $comment-conrer, $disable, $disk-blue, $disk-purple, $dropdown-arrow, $file-small, $files, $free-icon, $graph, $location, $mail-green, $mail-grey, $mail-white, $mail, $map-blue, $map-purple, $menu-icon-1, $menu-icon-2, $menu-icon-3, $menu-icon-4, $menu-icon-5, $messages, $money, $pagination-next, $pagination-prev, $phone-grey, $phone-white, $phone, $profile, $question-orange, $question-red, $regulator, $search-blue, $search-purple, $search, $teacher-label, $teacher-location, )
 $spritesheet: (325px, 294px, '../images/sprite.png', $spritesheet-sprites, )
 
-/*
-  The provided mixins are intended to be used with the array-like variables
-
-  .icon-home
-    @include sprite-width($icon-home)
-
-  .icon-email
-    @include sprite($icon-email)
-
-  Example usage in HTML:
-    `display: block` sprite:
-    <div class="icon-home"></div>
-
-  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-    // CSS
-    .icon {
-      display: inline-block;
-    }
-
-    // HTML
-    <i class="icon icon-home"></i>
-  */
 @mixin sprite-width($sprite)
   width: nth($sprite, 5)
 
@@ -587,12 +554,7 @@ $spritesheet: (325px, 294px, '../images/sprite.png', $spritesheet-sprites, )
   @include sprite-width($sprite)
   @include sprite-height($sprite)
 
-/*
-  The `sprites` mixin generates identical output to the CSS template
-    but can be overridden inside of SASS
 
-  @include sprites($spritesheet-sprites)
-  */
 @mixin sprites($sprites)
   @each $sprite in $sprites
     $sprite-name: nth($sprite, 10)
